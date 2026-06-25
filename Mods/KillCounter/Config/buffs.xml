@@ -1,0 +1,14 @@
+<HellsJanitor>
+	<append xpath="/buffs">
+		<buff name="buffKillCounter" name_key="buffKillCounterName" description_key="buffKillCounterDesc" showonhud="true" icon="ui_game_symbol_head_shot" icon_color="0,255,0">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<display_value value="killcounter"/>
+			<display_value_key value="Kills: {0}"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="killcounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="killcounter" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+	</append>
+</HellsJanitor>

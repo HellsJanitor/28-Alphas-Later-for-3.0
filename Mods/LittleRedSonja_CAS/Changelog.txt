@@ -1,0 +1,95 @@
+LittleRedSonja Cosmetic Armor System (CAS) -- by LittleRedSonja
+
+This support mod allows integration of custom armors and outfits included in other mods in the new cosmetics/wardrobe system. 
+
+Changelog:
+
+1.0.0 - Adds integration in the new cosmetics system for all our custom armors and outfits (Danger Girls, Vanilla Revamp, Some Traders, Halloweeny).
+      - Adds support for the custom armors included in "Winterween Overhaul"
+
+1.0.1 - Adds support for the "Guns Nerds and Steel (GNS)" set of armors, so Temreki can use it as cosmetics. 
+      - Adds support for "SinisterSmile - ViGen" set of armors, so they can use it as cosmetics. 
+
+1.1.0 - Adds a pagination function to the cosmetics window, so now you can navigate and see all your cosmetics no matter how many you have, instead of it being limited to one page.
+      - Adds support for all the masks and helmets in "Halloweeny" that were not already supported, because I was waiting until I could have the pagination feature running. 
+
+1.1.1 - Fixes Snake between Flowers boots not being added to cosmetics when scrapping. 
+      - Adds and error loading screen if you do not have Harmony installed, so you can quickly identify a problem that would prevent this and many other mods from working properly.
+
+1.2.0 - Adds a configuration file that allows you to choose and switch between 3 options on how to use and unlock your cosmetics: "Standard" (the cosmetics will unlock like in vanilla, you need to scrap the armor to unlock the cosmetic), "UnlockAll" (ALL the cosmetics are unlocked and available from the beginning, you do not need to scrap the armor to unlock them, including vanilla armor cosmetics and all the supported modded armor cosmetics. DLC CONTENT IS ONLY UNLOCKED IF YOU OWN THE DLC. It DOES NOT unlock DLC content if you do not have the DLC in your account), and "Disabled" (the cosmetics feature is no longer functional. The cosmetics UI is still there, for compatibility reasons, but it will not work. This was a request and I guess it can be useful for example for pvp scenarios where you do not want player to "hide" what armor they are wearing). You can choose the option you like more, and you can also switch between the three in the same save without problems as far as I could test. 
+     - It adds a new warning main menu window if you are missing 0_TFP_Harmony folder in your mods folder, so it will be easier to see that Harmony is a requirement and needs to be installed for the mod to work. 
+     - Small improvements in performance, cleaned the code a little. 
+
+1.2.1 - Adds support for new custom armors, including "Resident Evil Armor Pack".
+      - Small improvements.
+
+1.2.2 - Adds support for "The Walking Dead" Armor Pack. 
+      - Updates the "Missing Harmony Folder" warning screen with a new, funnier one made by Mumpfy :).
+
+1.3.0 - Code improvements for present and future compatibility.
+      - Code changes to mark the DLC armor icons look "unlocked" only if you own the DLC, preventing confusion about items looking "unlocked" when they are not.
+      - Adds support for the Goofy Time! armor pack and Hells Janitor armor.
+
+1.4.0 - Fixes a glitch that could prevent removing a cosmetic in some circumstances, when using the UnlockAll option. 
+      - Adds support for all the Santa hats and Reindeer ears included in "Christmas is Coming" mod.
+
+1.4.1 - Updates mod logic to prevent errors in dedicated servers using version 2.5 of the game.
+      - Many code improvement to make CAS more robust, reduce the chance for errors in uncommon circumstances, and make it easier for me to troubleshoot potential problems.
+      - Adds multiple fallbacks so the mod will most of the time be able to load with a "Safe Default Configuration" even if unexpected errors occur.  
+      - Add support for Trader Hugh and Trader Joel outfits so they are already supported for when I finish them (work in progress).
+      - Improves debug log logic.
+
+1.4.2 - Adds support for Fallout Armor Pack.
+      - Implements a safety fix to prevent potential null reference error in multiplayer in cases of disconnection, extreme lag and other very rare circumstances. 
+
+1.5.0 - Fixes some part of the armors looking invisible after changes introduced by TFP in game version 2.5 b32. 
+      - Fixes issues with the game making outfits including cloth components invisible or causing errors in vehicles and in dedicated servers.
+      - Fixes cosmetics for both custom armors and vanilla armors clipping when wearing power armor in "The Wasteland" overhaul. 
+      - Cosmetics are visible now when on vehicles since the power armor is invisible then. 
+      - Stability and performance improvements for multiplayer both p2p and dedicated servers. 
+
+1.5.1 - Fixes an edge case where some Danger Girls armors still had glitches despite the previous fix in 1.5.0. Now all the armors should be fixed.  
+
+1.6.0 - Fixes a glitch for multiplayer where other players could see your worn items including cloth physics as "invisible" when you are on a vehicle or very far away from them. 
+      - Several general improvements in performace.
+      - Adds a preventive safety check to avoid the risk for small glitches when starting a new game after exiting from a previous game to the main menu. 
+      - Move away from YAML for my config file, and replace it with a txt. The functionality is the same as before, but not depending on YAML cuts the mod size in half and improves compatibility.
+        For you dear player this change means that your old CAS_Config.yaml file is no longer useful, since the mod will instead read from the new txt config file. Since you anyway should always delete an old version of CAS
+        when updating to a new version, this is only relevant for you if you want to use a different setting other than the default (UnlockAll). In that case, please remember to make the edit in your new txt config file.
+      - Preliminary work for an external loader feature for future armor packs. Between other things this will allow me to release new armors without having to update CAS. 
+
+1.6.1 - Fixes new bugs introduced with game version 2.6 and affecting first person view for custom armors.
+
+1.6.2 - Small optimizations for more changes in 2.6 and for integrations with the new updates for "Vanity Vault" and "Never Enough".
+      - Added more fallbacks and safety checks to improve stability.
+      
+
+
+Known Issues: 
+Some of the armors and helmets included in "Halloweeny" are considered as part as some of the vanilla armor sets. This is made like that so they could be used as replacements for vanilla armor, and was more relevant when the cosmetic system was not in the game. This causes that, sometimes, if you try to apply a full set of some vanilla armors or a full set of some Halloweeny armors you might get a cosmetic look mixing some parts of different sets. If you see that happening simply apply the individual armor parts to your liking instead of the full set. This will be reworked in the "cosmetic only" version of Halloweeny I am working on.
+
+
+If you want to add support for other custom armors or outfits please let me know and I will be more than happy to add that. 
+
+ 
+I hope you enjoy the mod 💜. Let me know too if you have suggestions or find bugs.  🥰
+
+
+
+You can find all my mods here: 
+
+Nexus mods: https://next.nexusmods.com/profile/LittleRedSonja/mods
+https://community.thefunpimps.com/members/littleredsonja.112788/#about
+7daystodiemods.com: https://7daystodiemods.com/?s=littleredsonja
+
+
+I also have a channel in Guppy Modding Discord, you can always find me there and ask questions, leave suggestions or report problems :):
+LittleRedSonja Channel in Guppy Modding Discord: https://discord.gg/gTZzQ4bC58
+
+I have a Youtube channel where I post some short videos about my mods: https://www.youtube.com/@LittleRedSonja
+
+
+You can also contact me in Discord if you have questions or ideas: @LittleRedSonja
+
+
+​

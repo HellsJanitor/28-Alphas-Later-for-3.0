@@ -1,0 +1,8 @@
+<HellsJanitor>
+	
+	<append xpath="/recipes">
+	<recipe name="zKillCounterOn" count="1" craft_time="1" craft_exp_gain="0"/>
+	<recipe name="zKillCounterOff" count="1" craft_time="1" craft_exp_gain="0"/>	
+	</append>
+
+</HellsJanitor>

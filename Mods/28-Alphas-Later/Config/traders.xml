@@ -1,0 +1,200 @@
+<config>	
+	<!-- *** increased buy markup, decreased sell markup *** -->
+	<setattribute xpath="/traders" name="buy_markup">5</setattribute>
+	<setattribute xpath="/traders" name="sell_markdown">0.1</setattribute>
+	<removeattribute xpath="//trader_info[@id='4']/@override_buy_markup"/>
+	<removeattribute xpath="//trader_info[@id='10']/@override_buy_markup"/>
+	
+	<!-- *** trader always open -->
+	<removeattribute xpath="/traders/trader_info[@id='1']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='1']/@close_time"/>
+
+	<removeattribute xpath="/traders/trader_info[@id='6']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='6']/@close_time"/>
+	
+	<removeattribute xpath="/traders/trader_info[@id='2']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='2']/@close_time"/>
+	
+	<removeattribute xpath="/traders/trader_info[@id='7']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='7']/@close_time"/>
+	
+	<removeattribute xpath="/traders/trader_info[@id='8']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='8']/@close_time"/>
+	
+	<!-- *** iron hoe, schematic, and fertilizer added to trader stock -->
+	<append xpath="//trader_item_group[@name='perkBooks']">
+		<item name="meleeToolFarmT2IronHoeSchematic"/>
+	</append>
+	
+	<append xpath="//trader_item_group[@name='seeds']">
+	<item name="resourceFertilizer" count="50,100"/>
+	</append>
+	
+	<append xpath="//trader_item_group[@name='traderGeneral']">
+		<item name="meleeToolFarmT2IronHoe" quality="1"/>
+		<item name="resourceFertilizer" count="50,100"/>
+	</append>
+	
+	<!-- *** add lavender flower -->
+	<append xpath="//trader_item_group[@name='traderGeneral']">
+		<item name="resourceCropLavender" count="10,20"/>
+	</append>
+	
+	<!-- *** add sawblade and ammo press to trader stock -->
+	<append xpath="//trader_item_group[@name='tools']">
+		<item name="resourceSawBlade" count="1" prob="0.7"/>
+		<item name="toolAmmoPress" count="1" prob="0.7"/>
+	</append>
+	
+	<!-- *** brass catcher -->
+	<append xpath="//trader_item_group[@name='groupRangedMods']">
+		<item name="modGunBrassCatcher"/>
+	</append>
+	
+	<!-- *** add antivenom/St. John's wort to medical trader stock -->
+	<append xpath="//trader_item_group[@name='medicine']">
+		<!-- <item name="antivenom"/> -->
+		<item name="drugStJohnsWort" count="1"/>
+	</append>
+	
+	<!-- *** add lithium to rare medical trader stock -->
+	<append xpath="//trader_item_group[@name='rareMedicine']">
+		<item name="drugLithium" count="1"/>
+	</append>
+	
+	<!-- *** portable device batteries -->
+	<append xpath="//trader_item_group[@name='traderElectrical']">
+		<item name="resourceNiCdBattery" count="1,3" prob="0.7"/>
+	</append>
+	
+	<!-- *** canteen, flask, and sports bottle -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="toolCanteen" count="1" prob="0.3"/>
+		<item name="toolInsulatedFlask" count="1" prob="0.3"/>
+		<item name="toolSportsBottle" count="1" prob="0.3"/>
+	</append>
+	
+	<!-- *** remove dew collector tools, add beehive and chicken coop tools -->
+	<set xpath="/traders/trader_info/trader_items/item[@name='toolDewGatherer']/@name">toolHeatLamp</set>
+	<set xpath="/traders/trader_info/trader_items/item[@name='toolDewTarp']/@name">toolNest</set>
+	<set xpath="/traders/trader_info/trader_items/item[@name='toolDewFilter']/@name">toolbeeSmoker</set>
+	
+	<insertafter xpath="/traders/trader_info/trader_items/item[@name='toolbeeSmoker']">
+		<item name="toolBeeFrame" count="1,3"/>
+	</insertafter>
+	
+	
+	<set xpath="//trader_item_group[@name='groupArmorMods']">
+		<!-- *** T1_ARMOR_MODS -->
+		<item name="modArmorHelmetLight"/>
+		<item name="modArmorInsulatedLiner"/>
+		<item name="modArmorCoolingMesh"/>
+		<item name="modArmorPlatingBasic"/>
+		<item name="modArmorStoragePocket"/>
+		<item name="modArmorImprovedFittings"/>
+		<!-- <item name="modArmorPerception"/> -->
+		<!-- <item name="modArmorStrength"/> -->
+		<!-- <item name="modArmorFortitude"/> -->
+		<!-- <item name="modArmorAgility"/> -->
+		<!-- <item name="modArmorIntellect"/> -->
+		<item name="modArmorTreasureHunter"/>
+		<!-- *** T2_ARMOR_MODS -->
+		<item name="modArmorWaterPurifier"/>
+		<item name="modArmorImpactBracing"/>
+		<item name="modArmorPlatingReinforced"/>
+		<item name="modArmorMuffledConnectors"/>
+		<item name="modArmorDoubleStoragePocket"/>
+		<item name="modArmorCustomizedFittings"/>
+		<item name="modArmorCigar"/>
+		<!-- *** T3_ARMOR_MODS -->
+		<item name="modArmorBandolier"/>
+		<item name="modArmorTripleStoragePocket"/>
+		<item name="modArmorAdvancedMuffledConnectors"/>
+		<item name="modArmorNightVision"/>
+	</set>
+	
+	<!-- *** vehicles and parts -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupVehicles']">
+		<trader_item_group name="groupVehicles" count="1">
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+		<!-- *** BICYCLE -->
+			<item name="vehicleBicycleChassis"/>
+			<item name="vehicleBicycleHandlebars"/>
+			<item name="vehicleBicyclePlaceable"/>
+		<!-- *** SCOOTER -->
+			<item name="vehicleScooterChassis"/>
+			<item name="vehicleScooterHandlebars"/>
+			<item name="vehicleScooterPlaceable"/>
+		<!-- *** MINIBIKE -->
+			<item name="vehicleMinibikeChassis"/>
+			<item name="vehicleMinibikeHandlebars"/>
+			<item name="vehicleMinibikePlaceable"/>
+		<!-- *** DIRT BIKE -->
+			<item name="vehicleDirtBikeChassis"/>
+			<item name="vehicleDirtBikeHandlebars"/>
+			<item name="vehicleDirtBikePlaceable"/>
+		<!-- *** MOTORCYCLE -->
+			<item name="vehicleMotorcycleChassis"/>
+			<item name="vehicleMotorcycleHandlebars"/>
+			<item name="vehicleMotorcyclePlaceable"/>
+		<!-- *** QUAD BIKE -->
+			<item name="vehicleQuadBikeChassis"/>
+			<item name="vehicleQuadBikeHandlebars"/>
+			<item name="vehicleQuadBikePlaceable"/>	
+		<!-- *** DUNE BUGGY -->
+			<item name="vehicleDuneBuggyChassis"/>
+			<item name="vehicleDuneBuggyAccessories"/>
+			<item name="vehicleDuneBuggyPlaceable"/>
+		<!-- *** 4x4 -->
+			<item name="vehicleTruck4x4Chassis"/>
+			<item name="vehicleTruck4x4Accessories"/>
+			<item name="vehicleTruck4x4Placeable"/>	
+		<!-- *** SEMI TRUCK -->
+			<item name="vehicleSemiTruckChassis"/>
+			<item name="vehicleSemiTruckAccessories"/>
+			<item name="vehicleSemiTruckPlaceable"/>	
+		<!-- *** GYRO -->
+			<item name="vehicleGyroCopterChassis"/>
+			<item name="vehicleGyroCopterAccessories"/>
+			<item name="vehicleGyrocopterPlaceable"/>
+		</trader_item_group>		
+	</set>
+	
+	<!-- *** remove drinks -->
+	<remove xpath="//item[contains(@name,'drink') or (contains(@name,'Drink')) and not (contains(@name,'Beer'))]"/>
+	
+	<!-- *** remove crafting magazines -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']">
+		<item name="researchPaperBlank" count="20,500"/>
+	</set>
+	
+	<!-- *** no candy in vending machines, more food -->
+	<set xpath="/traders/trader_info[@id='10']">
+		<trader_items>
+			<item group="foodVending" count="8,12"/>
+		</trader_items>
+	</set>
+	
+	<set xpath="//trader_item_group[@name='constructionSupplies']//item[@name='resourceConcreteMix']/@name">resourceCrushedSand</set>
+	
+	<!-- *** Q600 rework -->
+	
+	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='1']/@quality">100</set> -->
+	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='2']/@quality">200</set> -->
+	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='3']/@quality">300</set> -->
+	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='4']/@quality">400</set> -->
+	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='5']/@quality">500</set> -->
+	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='6']/@quality">600</set> -->
+	
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='1']/@quality">1,100</set> -->
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='2']/@quality">101,200</set> -->
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='3']/@quality">201,300</set> -->
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='4']/@quality">301,400</set> -->
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='5']/@quality">401,500</set> -->
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='6']/@quality">501,600</set> -->
+	
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='1,6']/@quality">1,600</set> -->
+	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='2,6']/@quality">101,600</set> -->
+	<!-- <setattribute xpath="/traders/trader_item_groups/trader_item_group/item[@name='meleeToolRepairT3Nailgun']" name="quality">1,600</setattribute> -->
+</config>

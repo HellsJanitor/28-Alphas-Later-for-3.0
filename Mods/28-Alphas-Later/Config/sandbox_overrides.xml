@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HellsJanitor>
+	<set xpath="/sandbox_overrides">
+		<preset name="28AlphasLater" localized_name="28AlphasLaterPreset" description="Desired settings for the 28 Alphas Later mod" description_key="28AlphasLaterDesc" icon="" code="ABUDBSDDWEELAEXGFCBFGEFACFBIEOAFKAEPAEQAETA" default="true"/>
+	
+		<sandbox_override option="JarRefund"/>
+		<sandbox_override option="NewbieCoat"/>
+		<sandbox_override option="EncumbranceModifier"/>
+		<sandbox_override option="MaxEnemyTier"/>
+		<sandbox_override option="ShowLocationInfo"/>
+		<sandbox_override option="CropGrowthSpeed"/>
+		<sandbox_override option="DewCollectorTime"/>
+		<sandbox_override option="DewCollectorOutput"/>
+		<sandbox_override option="DewCollectorInput"/>
+		<sandbox_override option="ApiaryTime"/>
+		<sandbox_override option="ApiaryOutput"/>
+		<sandbox_override option="ApiaryInput"/>
+		<sandbox_override option="PointsPerMagazine"/>
+		<sandbox_override option="StarterSkillPoints"/>
+		<sandbox_override option="TraderSellPrices"/>
+		<sandbox_override option="TraderBuyPrices"/>
+	</set>
+</HellsJanitor>

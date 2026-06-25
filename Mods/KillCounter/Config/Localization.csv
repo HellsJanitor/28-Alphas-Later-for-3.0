@@ -1,0 +1,7 @@
+Key,english
+zKillCounterOn,Kill Counter (On)
+zKillCounterOff,Kill Counter (Off)
+zKillCounterOnDesc,"Enable a zombie kill counter.\n\nDoesn't count kills with molotov cocktails.\n\nCraft a 'kill counter off' to disable."
+zKillCounterOffDesc,"Disables the zombie kill counter (if currently active)."
+buffKillCounterName,Zombie kill counter
+buffKillCounterDesc,"The zombie kill counter is enabled.\n\nDoesn't count kills with molotov cocktails.\n\nCraft a 'kill counter off' to disable."

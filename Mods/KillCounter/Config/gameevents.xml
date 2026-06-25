@@ -1,0 +1,20 @@
+<HellsJanitor>
+	<append xpath="/gameevents">
+		<!-- <action_sequence name="action_KillCounter"> -->
+			<!-- <property name="allow_while_dead" value="true"/>			 -->
+	
+			<!-- <action class="AddBuff"> -->
+				<!-- <property name="buff_name" value="buffKillCounterAOETrigger"/> -->
+				<!-- <property name="duration" value="0.1" /> -->
+			<!-- </action> -->
+			
+			<!-- <action class="ModifyCVar"> -->
+				<!-- <property name="phase" value="3"/> -->
+				<!-- <property name="cvar" value="%killcounter"/> -->
+				<!-- <property name="entity_tags" value="player" /> -->
+				<!-- <property name="operation" value="add"/> -->
+				<!-- <property name="value" value="1"/> -->
+			<!-- </action>			 -->
+		<!-- </action_sequence> -->
+	</append>
+</HellsJanitor>

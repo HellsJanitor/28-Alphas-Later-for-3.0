@@ -1,0 +1,50 @@
+<HellsJanitor>
+	<append xpath="/items">
+		<item name="zKillCounterOn">
+		<property name="CustomIcon" value="drugPainkillers"/>
+		<property name="CustomIconTint" value="0,255,0"/>
+		<property name="DescriptionKey" value="zKillCounterOnDesc"/>
+		<property name="Tags" value="medical"/>
+		<!-- <property name="DisplayType" value="drugAtomJunkies"/> -->
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Health/pillBottlePrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="Group" value="Science,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false" name="buff on">			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffKillCounter"/>
+		</effect_group>
+	</item>
+	
+	<item name="zKillCounterOff">
+		<property name="CustomIcon" value="drugPainkillers"/>
+		<property name="CustomIconTint" value="255,0,0"/>
+		<property name="DescriptionKey" value="zKillCounterOffDesc"/>
+		<property name="Tags" value="medical"/>
+		<!-- <property name="DisplayType" value="drugAtomJunkies"/> -->
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Health/pillBottlePrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="Group" value="Science,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false" name="buff off">			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffKillCounter"/>
+		</effect_group>
+	</item>
+		
+	</append>
+</HellsJanitor>
