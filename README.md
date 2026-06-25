@@ -5,7 +5,7 @@
 The idea behind this mod is to slow progression, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
 > [!IMPORTANT]
->9/5/26 mod version 3.0.0.0
+>25/6/26 mod version 3.0.0.0
 
  - Known Issues: OCBMicroSplat is **not** updated as yet, so custom ore nodes have vanilla textures.
  
@@ -56,7 +56,7 @@ Despair is dynamically affected by various factors, including:
 
  - Nights are dangerous and a lot darker, downtown is **much** more dangerous.
  
-## WATER rework
+## Water rework
 
 ### Water has been completely overhauled for this version of the mod.
 
