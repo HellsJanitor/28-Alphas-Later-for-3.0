@@ -4377,6 +4377,8 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="543">
 					<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="543"/>
 				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
 
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffProcessConsumables,buffCoffee"/>
 				
