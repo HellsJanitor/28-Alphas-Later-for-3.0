@@ -1206,6 +1206,7 @@
 			<property name="CollectorType" value="DewCollector"/>
 			<property name="HJWaterDewCollector" value="false"/>
 			<property name="HJ_HideCollectorOutputUi" value="false"/>
+			<property name="HJ_HideCollectorStorageUi" value="false"/>
 			<property name="HJWaterGaugeEnabled" value="false"/>
 
 			<property name="FuelTypes" value="{feed,foodCornMeal}"/>
@@ -1215,7 +1216,7 @@
 			<property name="FuelTitleSpriteAtlas" value="UIAtlas"/>
 			<property name="FuelTypesSprites" value="foodCornMeal,ItemIconAtlasGreyscale"/>
 
-			<property name="OutputTypes" value="{egg,feed,10,10,10,foodEgg,foodEgg,2,2,21600,43200,collector_complete_item}"/>
+			<property name="OutputTypes" value="{egg,feed,10,10,10,foodEgg,foodEgg,2,2,21600,43200,collector_complete_item}"/><!--21600,43200-->
 			<property name="Outputs" value="egg,egg,egg,egg,egg,egg,egg,egg,egg"/>
 			<property name="ModTransformEnableNames" value="1,2,3"/>
 
@@ -1272,6 +1273,7 @@
 			<property name="CollectorType" value="DewCollector"/>
 			<property name="HJWaterDewCollector" value="false"/>
 			<property name="HJ_HideCollectorOutputUi" value="false"/>
+			<property name="HJ_HideCollectorStorageUi" value="false"/>
 			<property name="HJWaterGaugeEnabled" value="false"/>
 
 			<property name="FuelTypes" value="{flowers,resourceCropChrysanthemumPlant,resourceCropGoldenrodPlant,resourceCropCottonPlant}"/>
@@ -1281,7 +1283,7 @@
 			<property name="FuelTitleSpriteAtlas" value="UIAtlas"/>
 			<property name="FuelTypesSprites" value="plantedChrysanthemum3Harvest,ItemIconAtlasGreyscale,plantedGoldenrod3HarvestPlayer,ItemIconAtlasGreyscale,plantedCotton3Harvest,ItemIconAtlasGreyscale"/>
 
-			<property name="OutputTypes" value="{honey,flowers,10,10,10,foodHoney,foodHoney,2,2,21600,43200,collector_complete_item}"/>
+			<property name="OutputTypes" value="{honey,flowers,10,10,10,foodHoney,foodHoney,2,2,21600,43200,collector_complete_item}"/> <!--21600,43200-->
 			<property name="Outputs" value="honey,honey,honey,honey,honey,honey,honey,honey,honey"/>
 			<property name="ModTransformEnableNames" value="1,2,3"/>
 
@@ -3068,7 +3070,7 @@
 	</append>
 	
 	<!-- *** water rework -->
-	<append xpath="/blocks/block[contains(@name,'Sink')]">
+	<append xpath="/blocks/block[contains(@name,'Sink') and not (contains(@name,'Cabinet')) and not (contains(@name,'VariantHelper'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="clean"/>
 		<property name="WaterCapacity" value="4"/>
@@ -3078,7 +3080,7 @@
 		<!-- <property name="SourceRespawnHours" value="1"/> -->
 	</append>
 
-	<append xpath="/blocks/block[contains(@name,'Toilet')]">
+	<append xpath="/blocks/block[contains(@name,'Toilet') and not (contains(@name,'VariantHelper'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="murky"/>
 		<property name="WaterCapacity" value="3"/>
@@ -3131,7 +3133,7 @@
 	<remove xpath="/blocks/block[contains(@name,'WaterCooler')]/property[@name='DisplayType']"/>
 
 	<!-- *** coffee machines -->
-	<append xpath="/blocks/block[contains(@name,'Coffee')]">
+	<append xpath="/blocks/block[contains(@name,'CoffeeMaker') and not (contains(@name,'planted'))]">
 		<property name="HJDrinkSource" value="true"/>
 		<property name="DrinkKind" value="coffee"/>
 		<property name="DrinkCapacity" value="4"/>
