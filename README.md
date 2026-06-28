@@ -11,6 +11,8 @@ The idea behind this mod is to slow progression, and generally extend the time f
  
  - Some UI issues with all passive collectors. Doesn't affect functionality, and will be fixed in a future update/fix.
 
+ - Some reports of drink sources refilling. This will be fixed in an upcoming update.
+
 > [!CAUTION]
 > Will require a new save, and is only compatible with base game version 3.0.0 and above.
 
