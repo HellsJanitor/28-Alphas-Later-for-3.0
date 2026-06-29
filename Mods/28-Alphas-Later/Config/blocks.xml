@@ -451,33 +451,29 @@
 		<block name="terrOreStoneChromiumRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="ItemTypeIcon" value="other"/>
-			<property name="SortOrder1" value="0000"/>
+			
 			<property name="SortOrder2" value="1450"/>
 		</block>
 		
 		<block name="terrOreStoneCopperRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="ItemTypeIcon" value="other"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="1450"/>
+			
+			<property name="SortOrder2" value="1500"/>
 		</block>
 		
 		<block name="terrOreStoneLimestoneRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="ItemTypeIcon" value="other"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="1450"/>
+			
+			<property name="SortOrder2" value="1550"/>
 		</block>
 		
 		<block name="terrOreStoneZincRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="ItemTypeIcon" value="other"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="1450"/>
+			
+			<property name="SortOrder2" value="1600"/>
 		</block>
 		
 		<!-- *** surface boulders -->
@@ -3077,7 +3073,7 @@
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="4"/>
 		<property name="FillPerUse" value="1"/>
-		<!-- <property name="SourceRespawnHours" value="1"/> -->
+		<property name="SourceRespawnHours" value="0"/>
 	</append>
 
 	<append xpath="/blocks/block[contains(@name,'Toilet') and not (contains(@name,'VariantHelper'))]">
@@ -3087,6 +3083,7 @@
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="3"/>
 		<property name="FillPerUse" value="1"/>
+		<property name="SourceRespawnHours" value="0"/>
 	</append>
 	
 	<remove xpath="/blocks/block[contains(@name,'Toilet')]/property[@name='Class']"/>
@@ -3099,6 +3096,7 @@
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="2"/>
 		<property name="FillPerUse" value="1"/>
+		<property name="SourceRespawnHours" value="0"/>
 	</append>
 	
 	<append xpath="/blocks/block[contains(@name,'drinkingfountain')]">
@@ -3108,6 +3106,7 @@
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="3"/>
 		<property name="FillPerUse" value="1"/>
+		<property name="SourceRespawnHours" value="0"/>
 	</append>
 	
 	<append xpath="/blocks/block[contains(@name,'showerHead')]">
@@ -3117,6 +3116,7 @@
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="2"/>
 		<property name="FillPerUse" value="1"/>
+		<property name="SourceRespawnHours" value="0"/>
 	</append>
 
 	<append xpath="/blocks/block[contains(@name,'WaterCooler')]">
@@ -3126,6 +3126,7 @@
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="6"/>
 		<property name="FillPerUse" value="1"/>
+		<property name="SourceRespawnHours" value="0"/>
 	</append>
 	
 	<remove xpath="/blocks/block[contains(@name,'WaterCooler')]/property[@name='Class']"/>
@@ -3141,8 +3142,8 @@
 		<property name="DrinkInitialMax" value="4"/>
 		<property name="DrinkFillPerUse" value="1"/>
 		
-		<property name="DrinkPassiveRefillHours" value="1"/>
-		<property name="DrinkPassiveRefillUnits" value="1"/>
+		<property name="DrinkPassiveRefillHours" value="0"/>
+		<property name="DrinkPassiveRefillUnits" value="0"/>
 	</append>
 	
 	<remove xpath="/blocks/block[@name='cntCoffeeMaker']/property[@name='Class']"/>
@@ -3176,8 +3177,8 @@
 		<property name="DrinkInitialMax" value="4"/>
 		<property name="DrinkFillPerUse" value="1"/>
 		
-		<!-- <property name="DrinkPassiveRefillHours" value="1"/> -->
-		<!-- <property name="DrinkPassiveRefillUnits" value="1"/> -->
+		<property name="DrinkPassiveRefillHours" value="0"/>
+		<property name="DrinkPassiveRefillUnits" value="0"/>
 	</set>
 	
 	<!-- *** water barrels -->

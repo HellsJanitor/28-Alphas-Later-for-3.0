@@ -12,15 +12,15 @@
 	
 	<set xpath="/windows/window[@name='menuBackground']">
 		<sprite depth="0" color="[black]" globalopacitymod="0" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5"/>
-		<texture depth="1" color="[white]" globalopacitymod="0" texture="@modfolder:UIAtlases/ItemIconAtlas/background.jpg" name="bgTexture" anchor_left="#cam,0.5,-1152" anchor_right="#cam,0.5,1152" anchor_bottom="#cam,0.5,-648" anchor_top="#cam,0.5,648" keepsourceaspectratio="true"/>
+		<texture depth="1" color="[white]" globalopacitymod="0" texture="@modfolder:UIAtlases/ItemIconAtlas/background.jpg" name="bgTexture" anchor_left="#cam,0.5,-896" anchor_right="#cam,0.5,896" anchor_bottom="#cam,0.5,-504" anchor_top="#cam,0.5,504" keepsourceaspectratio="true"/>
 		
-		<video name="videoTexture" depth="2" anchor_left="#cam,0.5,-1152" anchor_right="#cam,0.5,1152" anchor_bottom="#cam,0.5,-648" anchor_top="#cam,0.5,648" uri="@modfolder:/Video/transparent" videoaspect="FitInside" loop="true" />
-		<video name="videoTexture" depth="2" anchor_left="#cam,0.5,-1152" anchor_right="#cam,0.5,924" anchor_bottom="#cam,0.5,-530" anchor_top="#cam,0.5,648" uri="@modfolder:/Video/transparent1" videoaspect="FitInside" loop="true" />
+		<video name="videoTexture" depth="2" anchor_left="#cam,0.5,-896" anchor_right="#cam,0.5,896" anchor_bottom="#cam,0.5,-504" anchor_top="#cam,0.5,504" uri="@modfolder:/Video/transparent" videoaspect="FitInside" loop="true" />
+		<video name="videoTexture" depth="2" anchor_left="#cam,0.5,-896" anchor_right="#cam,0.5,896" anchor_bottom="#cam,0.5,-504" anchor_top="#cam,0.5,504" uri="@modfolder:/Video/transparent1" videoaspect="FitInside" loop="true" />
 	</set>
 	
 	<set xpath="/windows/window[@name='mainMenu']">
 		<!-- <texture pos="0,0" height="400" color="[white]" texture="@:Textures/UI/news_logo.png" name="gameLogo" pivot="topleft" keep_aspect_ratio="BasedOnHeight" aspect_ratio="0.608" /> -->
-
+		
 		<grid pos="0,-450" rows="13" cell_width="400" cell_height="60" repeat_content="false" arrangement="vertical" controller="MainMenuButtons">
 			<mainmenubutton name="btnPlayGame" width="400" height="50" caption_key="xuiPlayGame" nav_up="{# !is_console ? 'btnQuit' : 'btnNews' }" />
 			<mainmenubutton name="btnOptions" width="400" height="50" caption_key="xuiOptions" />

@@ -1,5 +1,9 @@
 <config>
-	
+	<prepend xpath="/lootcontainers/lootprobtemplates">
+		<lootprobtemplate name="extremelyLow">
+			<loot level="1,999999" prob=".01"/>
+		</lootprobtemplate>
+	</prepend>
 	<insertafter xpath="//lootqualitytemplates/lootqualitytemplate[@name='qualQ1Template']">
 		<!-- *** legendary quality template *** -->
 		<lootqualitytemplate name="qualLegendaryTemplate">
@@ -34,14 +38,14 @@
 	
 	<!-- *** coffee flask and sports bottle -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupShamwayShelves02']">
-		<item name="toolInsulatedFlask" count="1" loot_prob_template="low"/>
-		<item name="toolSportsBottle" count="1" loot_prob_template="low"/>
+		<item name="toolInsulatedFlask" count="1" loot_prob_template="veryLow"/>
+		<item name="toolSportsBottle" count="1" loot_prob_template="veryLow"/>
 	</append>
 	
 	<append xpath="/lootcontainers/lootgroup[@name='groupCupboard02']">
-		<item name="toolCanteen" count="1" loot_prob_template="veryLow"/>
-		<item name="toolInsulatedFlask" count="1" loot_prob_template="veryLow"/>
-		<item name="toolSportsBottle" count="1" loot_prob_template="veryLow"/>
+		<item name="toolCanteen" count="1" loot_prob_template="extremelyLow"/>
+		<item name="toolInsulatedFlask" count="1" loot_prob_template="extremelyLow"/>
+		<item name="toolSportsBottle" count="1" loot_prob_template="extremelyLow"/>
 	</append>
 	
 	<!-- *** adds cotton seeds to loot -->

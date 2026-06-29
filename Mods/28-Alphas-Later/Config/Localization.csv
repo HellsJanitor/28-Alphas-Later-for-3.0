@@ -1,10 +1,10 @@
 Key,english
-28AlphasLaterPreset,"28 Alphas Later"
-28AlphasLaterDesc,"Desired settings for the 28 Alphas Later mod"
+28AlphasLaterDesc,Desired settings for the 28 Alphas Later mod
+28AlphasLaterPreset,28 Alphas Later
 28AlphasLaterQuest1_title,Despair
 28AlphasLaterQuest10_title,Weather
-28AlphasLaterQuest1,"[DECEA3]Despair[-] is dynamically affected by various different factors, including:\n\n1. [DECEA3]Darkness[-]. Too dark, and your Despair will increase dramatically. [DECEA3]Torches[-], [DECEA3]helmet lights[-] and [DECEA3]flashlights[-] will mitigate this. Use these in [DECEA3]conjunction[-] with a [DECEA3]campfire & bedroll[-] for the best effect.\n\n2. [DECEA3]Temperature[-]. If you’re [DECEA3]freezing[-] or [DECEA3]sweltering[-], your [DECEA3]Despair[-] will also increase dramatically. [DECEA3]Find shelter![-]\n\n3. [DECEA3]Environment:[-] Varying degrees of [DECEA3]wetness[-] will change how [DECEA3]Despair[-] affects you, as will your [DECEA3]shelter[-]. If you’re [DECEA3]warm, dry, sheltered, well lit[-] or [DECEA3]resting[-] on a [DECEA3]bed or bedroll[-], AND near an [DECEA3]operating campfire[-], [DECEA3]forge[-] or [DECEA3]chemistry station[-] you can effectively [DECEA3]treat Despair[-].\n\n4. [DECEA3]Hunger[-] and [DECEA3]thirst[-] affect how quickly your despair increases. [DECEA3]Starvation/dehydration[-] will drastically increase the rate at which you become affected by despair.\n\n5. [DECEA3]Injuries[-] will affect how quickly your despair increases, so [DECEA3]treat them as quickly as you can![-]\n\n6. There is [DECEA3]medication[-] in [DECEA3]trader stock[-] and [DECEA3]rare medical loot[-] to treat your despair; [DECEA3]St. John's Wort[-] treats [DECEA3]10%[-] and [DECEA3]Lithium[-] treats [DECEA3]25%[-].\n\n7. There is also [DECEA3]lavender[-] growing [DECEA3]wild[-], which can be [DECEA3]collected[-] to make your own [DECEA3]lavender seeds[-], and is also used to make [DECEA3]Lavender Oil[-] in a [DECEA3]cooking pot[-] at a [DECEA3]campfire[-]. Treats [DECEA3]3%[-] Despair."
 28AlphasLaterQuest10,"Weather effects are back. [DECEA3]Temperature and wetness[-] are effects that you'll need to manage effectively. Use [DECEA3]insulated liner armour mods[-], [DECEA3]coffee[-], [DECEA3]campfires[-] and [DECEA3]torches[-] for when you're cold, and [DECEA3]cooling mesh armour mods[-], [DECEA3]yucca juice[-] and [DECEA3]yucca smoothies[-] for when you're hot.\n"
+28AlphasLaterQuest1,"[DECEA3]Despair[-] is dynamically affected by various different factors, including:\n\n1. [DECEA3]Darkness[-]. Too dark, and your Despair will increase dramatically. [DECEA3]Torches[-], [DECEA3]helmet lights[-] and [DECEA3]flashlights[-] will mitigate this. Use these in [DECEA3]conjunction[-] with a [DECEA3]campfire & bedroll[-] for the best effect.\n\n2. [DECEA3]Temperature[-]. If you’re [DECEA3]freezing[-] or [DECEA3]sweltering[-], your [DECEA3]Despair[-] will also increase dramatically. [DECEA3]Find shelter![-]\n\n3. [DECEA3]Environment:[-] Varying degrees of [DECEA3]wetness[-] will change how [DECEA3]Despair[-] affects you, as will your [DECEA3]shelter[-]. If you’re [DECEA3]warm, dry, sheltered, well lit[-] or [DECEA3]resting[-] on a [DECEA3]bed or bedroll[-], AND near an [DECEA3]operating campfire[-], [DECEA3]forge[-] or [DECEA3]chemistry station[-] you can effectively [DECEA3]treat Despair[-].\n\n4. [DECEA3]Hunger[-] and [DECEA3]thirst[-] affect how quickly your despair increases. [DECEA3]Starvation/dehydration[-] will drastically increase the rate at which you become affected by despair.\n\n5. [DECEA3]Injuries[-] will affect how quickly your despair increases, so [DECEA3]treat them as quickly as you can![-]\n\n6. There is [DECEA3]medication[-] in [DECEA3]trader stock[-] and [DECEA3]rare medical loot[-] to treat your despair; [DECEA3]St. John's Wort[-] treats [DECEA3]10%[-] and [DECEA3]Lithium[-] treats [DECEA3]25%[-].\n\n7. There is also [DECEA3]lavender[-] growing [DECEA3]wild[-], which can be [DECEA3]collected[-] to make your own [DECEA3]lavender seeds[-], and is also used to make [DECEA3]Lavender Oil[-] in a [DECEA3]cooking pot[-] at a [DECEA3]campfire[-]. Treats [DECEA3]3%[-] Despair."
 28AlphasLaterQuest2_title,Despair (cont.)
 28AlphasLaterQuest2,"8. All [DECEA3]food[-] has a positive effect. The [DECEA3]better the food[-], the more [DECEA3]effective the treatment[-].\n\n9. [DECEA3]Killing zombies[-] and [DECEA3]animals[-] will reduce your overall despair. Conversely, [DECEA3]getting hit[-] by enemies will increase it.\n\n10. Being in [DECEA3]close proximity[-] to [DECEA3]zombies[-] increases your Despair. The tougher the zombie, the worse the effect. The effect is [DECEA3]compounded[-], so [DECEA3]the more zombies there are[-], the [DECEA3]worse[-] it'll be.\n\n11. [DECEA3]Player wellness[-]. Your [DECEA3]maximum health[-] will also slow down the effects of despair. Every [DECEA3]10[-] additional health [DECEA3]slows down[-] the rate at which Despair affects you.\n\n12. The [DECEA3]morale booster[-] from the drone will [DECEA3]slow down[-] the rate at which despair affects you.\n\n13. The [DECEA3]trader[-] has an effect. Being [DECEA3]close to a trader[-] will [DECEA3]slow down[-] and/or [DECEA3]reduce[-] your Despair.\n\n14. The perk [DECEA3]From the Shadows[-] also has an effect on the way Despair affects you at [DECEA3]NIGHT[-]. The more points in the perk, the less Despair affects you at night.\n"
 28AlphasLaterQuest3_title,Enemies
@@ -500,6 +500,8 @@ perkSledgeSagaDegradationLongDesc,Maintenance: Maximize every swing to reduce de
 perkTurretsDesc,You are fascinated with robotics. Learn to use and deploy robotic weapons.
 perkUrbanCombatCompleteDesc,Suppressors have no damage penalty.
 perkUrbanCombatCompleteLongDesc,The Silencer: Firearms with suppressors have no damage penalty.
+perkWasteTreasuresWaterDesc,"Cook Sham Chowder, and put hairs on your chest!"
+perkWasteTreasuresWaterLongDesc,"Sham Chowder .../n/nThe only food worth eating. Doesn't look like much, and tastes worse, but the feeling from the healing makes it all worth it."
 perkWellInsulatedRank1Desc,Mildly Weather Tolerant
 perkWellInsulatedRank1LongDesc,"You like mild weather, but can handle a bit of temperature fluctuation. Gain 5 insulation against heat and cold, and lose 5% less food and water when cold or overheating."
 perkWellInsulatedRank2Desc,Moderately Weather Resistant
@@ -510,8 +512,6 @@ perkWellInsulatedRank4Desc,Extremely Weather Hardened
 perkWellInsulatedRank4LongDesc,Harsher environments aren't bothering you much these days. Lose 20% less food and water when cold or overheating. Grants 20 insulation against both heat and cold.
 perkWellInsulatedRank5Desc,Completely Weather Hardened
 perkWellInsulatedRank5LongDesc,You can now handle severe weather and typically couldn't care less what the weather conditions are. You will never have the more severe stages of temperature status effects
-perkWasteTreasuresWaterDesc,"Cook Sham Chowder, and put hairs on your chest!"
-perkWasteTreasuresWaterLongDesc,"Sham Chowder .../n/nThe only food worth eating. Doesn't look like much, and tastes worse, but the feeling from the healing makes it all worth it."
 placedLitTorch1,Wall Torch
 placedLitTorch3Harvest,Spent Torch
 placedLitTorch3HarvestDesc,This torch is spent and needs refuelling
@@ -724,14 +724,14 @@ toolbeeSmoker,Bee Smoker
 toolbeeSmokerDesc,Speeds up production of honey.
 toolCanteen,Canteen
 toolCanteenDesc,Reusable container for collecting water.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the canteen.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]deposit[-] contents into a water container.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
-toolInsulatedFlask,Travel Mug
-toolInsulatedFlaskDesc,Reusable container for storing & drinking coffee.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the mug.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]fill[-] the mug from a coffee machine.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
-toolSportsBottle,Sports Bottle
-toolSportsBottleDesc,Reusable container for storing & drinking cjuices and smoothies.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the bottle.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]fill[-] the bottle from a soda machine.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
 toolHeatLamp,Heat Lamp
 toolHeatLampDesc,Speeds up production of eggs.
+toolInsulatedFlask,Travel Mug
+toolInsulatedFlaskDesc,Reusable container for storing & drinking coffee.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the mug.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]fill[-] the mug from a coffee machine.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
 toolNest,Nesting
 toolNestDesc,Doubles the number of eggs produced.
+toolSportsBottle,Sports Bottle
+toolSportsBottleDesc,Reusable container for storing & drinking cjuices and smoothies.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the bottle.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]fill[-] the bottle from a soda machine.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
 toolWaterDistillery,Water Distiller
 toolWaterDistilleryDesc,A utensil used in a campfire to purify water.
 trader_books,Trader Nancy
@@ -743,6 +743,10 @@ ttRepairQualityLoss,Repair reduced quality: {0} -> {1} (-{2})
 ttRepairRemovedMods,Quality drop removed {0} mod(s).
 ttSemiTrailerIncompatibleStorage,The semi-trailer cannot be used with standard vehicle storage mods.
 ttSemiTrailerStorageNotEmpty,Empty the trailer storage before removing the trailer mod.
+unit_chromium,Chrome
+unit_copper,Copper
+unit_limestone,Limestone
+unit_zinc,Zinc
 vehicleDirtBike,The Ruin Runner
 vehicleDirtBikeChassis,The Ruin Runner Chassis
 vehicleDirtBikeHandlebars,The Ruin Runner Handlebars
