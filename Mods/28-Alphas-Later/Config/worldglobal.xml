@@ -1,16 +1,19 @@
 <HellsJanitor>
-	
-	<set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .035</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.3, .001</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .005</set>
+    <!-- Keep enough ambient for particles/smoke/materials to render correctly -->
+    <set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .10</set>
+    <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.3, .025</set>
+    <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .045</set>
     <set xpath="/worldglobal/environment/property[@name='ambientSkyDesat']/@value">.95, .0</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .0</set>
 
-    <set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">.5, .035</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">.4, .001</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.7, .005</set>
+    <!-- Do not fully kill moon ambient; smoke and lit particles need a little fill -->
+    <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .04</set>
 
-    <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">1.6, 1.8</set>
+    <!-- Interiors can still be dark, but not absolute-zero -->
+    <set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">.5, .08</set>
+    <set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">.4, .02</set>
+    <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.7, .035</set>
+
+    <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">1.4, 1.6</set>
 	
 	<append xpath="/worldglobal">
 		<microsplat-voxel name="oreChromiumVoxel">

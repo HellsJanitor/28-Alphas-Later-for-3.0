@@ -731,7 +731,7 @@ toolInsulatedFlaskDesc,Reusable container for storing & drinking coffee.\n\n[00F
 toolNest,Nesting
 toolNestDesc,Doubles the number of eggs produced.
 toolSportsBottle,Sports Bottle
-toolSportsBottleDesc,Reusable container for storing & drinking cjuices and smoothies.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the bottle.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]fill[-] the bottle from a soda machine.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
+toolSportsBottleDesc,Reusable container for storing & drinking juices and smoothies.\n\n[00FF00]Press [-][action:local:Primary] to [FFB400]drink[-] from the bottle.\n[00FF00]Press [-][action:local:Secondary] to [FFB400]fill[-] the bottle from a soda machine.\n[00FF00]Press [-][action:local:Secondary] [FFB400]while crouching[-] to dump contents.
 toolWaterDistillery,Water Distiller
 toolWaterDistilleryDesc,A utensil used in a campfire to purify water.
 trader_books,Trader Nancy
