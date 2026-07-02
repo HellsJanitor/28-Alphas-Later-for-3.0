@@ -1,18 +1,9 @@
 <HellsJanitor>
-
-	<!-- *** enables the combine function in the workbench -->
-	<!-- <append xpath="/xui/ruleset/window_group[@name='workstation_workbench']"> -->
-		<!-- <window name="windowCombine" /> -->
-	<!-- </append> -->
 	
 	<!-- *** adds fuel requirement for cement mixer -->
 	<insertafter xpath="//window_group[@name='workstation_cementMixer']//window[@name='windowCraftingQueue']">
 	<window name="windowMixerFuel" />
 	</insertafter>
-	
-	<!-- *** custom fuel and output for campfire -->
-	<!-- <set xpath="/xui/ruleset/window_group[@name='workstation_campfire']/window[@name='windowFuel']/@name">windowCampfireFuel</set> -->
-	<!-- <set xpath="/xui/ruleset/window_group[@name='workstation_campfire']/window[@name='windowOutput']/@name">windowCampfireOutput</set> -->
 	
 	<!-- *** new forge output -->
 	<set xpath="/xui/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowForgeOutput</set>

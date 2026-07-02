@@ -3935,27 +3935,7 @@
 		<reward type="Item" id="solarCell" ischosen="true" isfixed="true" value="3"/>
 		<reward type="Item" id="toolForgeCrucible" ischosen="true" isfixed="true" value="1"/>
 		<reward type="Item" id="resourceLegendaryParts" ischosen="true" isfixed="true" value="4"/>
-	</set>
-	
-	<!-- *** trader quests per tier increased to 10 *** -->
-	<setattribute xpath="/quests" name="quests_per_tier">10</setattribute>
-	
-	<!-- *** bartering sauce gives passive buff, reward for each tier completed *** -->
-	<insertafter xpath="//quest[@id='quest_tier1complete']//reward[1]">
-		<reward type="Item" id="BarteringSauceOne" value="1"/>
-	</insertafter>
-	<insertafter xpath="//quest[@id='quest_tier2complete']//reward[1]">
-		<reward type="Item" id="BarteringSauceTwo" value="1"/>
-	</insertafter>
-	<insertafter xpath="//quest[@id='quest_tier3complete']//reward[1]">
-		<reward type="Item" id="BarteringSauceThree" value="1"/>
-	</insertafter>
-	<insertafter xpath="//quest[@id='quest_tier4complete']//reward[1]">
-		<reward type="Item" id="BarteringSauceFour" value="1"/>
-	</insertafter>
-	<insertafter xpath="//quest[@id='quest_tier5complete']//reward[1]">
-		<reward type="Item" id="BarteringSauceFive" value="1"/>
-	</insertafter>
+	</set>	
 	
 	<!-- *** removes night quests except tier 4 *** -->
 	<remove xpath="//quest_list[starts-with(@id,'trader')]//quest[@id='tier2_restore_power']"/>
