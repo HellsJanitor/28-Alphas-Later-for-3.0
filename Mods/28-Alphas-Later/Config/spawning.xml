@@ -739,57 +739,57 @@
 		</biome>
 	</append>
 	
-	<conditional>
-		<if cond="gamepref('GameDifficulty') >= '4'">
-			<append xpath="/spawning/biome[starts-with(@name,'pine_forest')]">
-				<spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesRottenAll" notags="commercial,industrial,downtown" />
-				<spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesWeakAll" tags="commercial,industrial" notags="downtown" />
-				<spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" />
+	<!-- <conditional> -->
+		<!-- <if cond="gamepref('GameDifficulty') >= '4'"> -->
+			<!-- <append xpath="/spawning/biome[starts-with(@name,'pine_forest')]"> -->
+				<!-- <spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesRottenAll" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesWeakAll" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" /> -->
 				
-				<spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
-				<spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesForestDowntownNight" tags="commercial,industrial" notags="downtown" />
-				<spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" />
-			</append>
+				<!-- <spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesForestDowntownNight" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" /> -->
+			<!-- </append> -->
 			
-			<append xpath="/spawning/biome[starts-with(@name,'burnt_forest')]">
-				<spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesRottenBurnt" notags="commercial,industrial,downtown" />
-				<spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesWeakBurnt" tags="commercial,industrial" notags="downtown" />
-				<spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+			<!-- <append xpath="/spawning/biome[starts-with(@name,'burnt_forest')]"> -->
+				<!-- <spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesRottenBurnt" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesWeakBurnt" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesDowntown" tags="downtown" /> -->
 				
-				<spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
-				<spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesDowntown" tags="commercial,industrial" notags="downtown" />
-				<spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
-			</append>
+				<!-- <spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesDowntown" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesDowntown" tags="downtown" /> -->
+			<!-- </append> -->
 			
-			<append xpath="/spawning/biome[starts-with(@name,'desert')]">
-				<spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesDesertNoSpecial" notags="commercial,industrial,downtown" />
-				<spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesDesert" tags="commercial,industrial" notags="downtown" />
-				<spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" />
+			<!-- <append xpath="/spawning/biome[starts-with(@name,'desert')]"> -->
+				<!-- <spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesDesertNoSpecial" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesDesert" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" /> -->
 				
-				<spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
-				<spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
-				<spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" />
-			</append>
+				<!-- <spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" /> -->
+			<!-- </append> -->
 			
-			<append xpath="/spawning/biome[starts-with(@name,'snow')]">
-				<spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesSnowNoSpecial" notags="commercial,industrial,downtown" />
-				<spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesSnow" tags="commercial,industrial" notags="downtown" />
-				<spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+			<!-- <append xpath="/spawning/biome[starts-with(@name,'snow')]"> -->
+				<!-- <spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesSnowNoSpecial" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesSnow" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesDowntown" tags="downtown" /> -->
 				
-				<spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesSnowNight" notags="commercial,industrial,downtown" />
-				<spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
-				<spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
-			</append>
+				<!-- <spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesSnowNight" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesDowntown" tags="downtown" /> -->
+			<!-- </append> -->
 			
-			<append xpath="/spawning/biome[starts-with(@name,'wasteland')]">
-				<spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesWasteland" notags="commercial,industrial,downtown" />
-				<spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesAllWasteland" tags="commercial,industrial" notags="downtown" />
-				<spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesWastelandDowntown" tags="downtown" />
+			<!-- <append xpath="/spawning/biome[starts-with(@name,'wasteland')]"> -->
+				<!-- <spawn id="dz05" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesWasteland" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="dz06" maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesAllWasteland" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="dz07" maxcount="4" respawndelay="0.5" time="Day" entitygroup="ZombiesWastelandDowntown" tags="downtown" /> -->
 				
-				<spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesWastelandNight" notags="commercial,industrial,downtown" />
-				<spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesWastelandNight" tags="commercial,industrial" notags="downtown" />
-				<spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesWastelandDowntown" tags="downtown" />
-			</append>
-		</if>
-	</conditional>
+				<!-- <spawn id="nz05" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesWastelandNight" notags="commercial,industrial,downtown" /> -->
+				<!-- <spawn id="nz06" maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesWastelandNight" tags="commercial,industrial" notags="downtown" /> -->
+				<!-- <spawn id="nz07" maxcount="4" respawndelay="0.5" time="Night" entitygroup="ZombiesWastelandDowntown" tags="downtown" /> -->
+			<!-- </append> -->
+		<!-- </if> -->
+	<!-- </conditional> -->
 </HellsJanitor>
