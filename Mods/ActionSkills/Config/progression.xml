@@ -330,38 +330,7 @@
 				</triggered_effect>
 			</effect_group>
 			
-		</perk>
-		
-		<!-- *** Lucky Looter Learn By Use (lbu)-->
-		<perk name="lbu_LuckyLooter" max_level="100" parent="lbu_GeneralSkills" base_skill_point_cost="0" name_key="lbu_LuckyLooterName" desc_key="lbu_LuckyLooterDesc" long_desc_key="lbu_LuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
-		
-			<!--BCK verify ProgressionLevel, backup var should always be equal to ProgessionLevel-->
-			<effect_group>
-				<requirement name="!HasBuff" buff="buffVerifyLBU_ProgressLevels"/>
-				<requirement name="ProgressionLevel" progression_name="lbu_LuckyLooter" operation="NotEquals" value="@lbu_LuckyLooter_Lvl"/>
-				<triggered_effect trigger="onSelfLootContainer" action="AddBuff" buff="buffVerifyLBU_ProgressLevels"/>
-			</effect_group>
-			
-			<!--apply current effect as per level-->
-			<effect_group>
-				<!--the Learn By Use Lucky Looter increases loot quantity rather than quality.-->
-				<passive_effect name="LootStage" operation="perc_add" value=".05,.25" level="1,100"/>
-				<passive_effect name="ScavengingTime" operation="perc_subtract" value="0.01,0.8" level="1,100"/>
-			</effect_group>
-			
-			<effect_group>
-				<!-- Increase the chance to find Lucky Looter books until each book is read -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,100" value="2,10" tags="luckyProb">
-					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="LT" value="1"/>
-				</passive_effect>
-
-				<!-- When all Lucky Looter books have been read, set the probability bonus of finding them to 0 -->
-				<passive_effect name="LootProb" operation="base_set" level="1,100" value="1,1" tags="luckyProb">
-					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="Equals" value="1"/>
-				</passive_effect>
-			</effect_group>
-			<!--see buffs:buffLuckyLooterXPMonitor for the xp and level changes for lucky looter-->
-		</perk>
+		</perk>		
 		
 		<!-- *** Salvage Operations Learn By Use (lbu)-->
 		<perk name="lbu_Salvage" max_level="100" parent="lbu_PerceptionSkills" base_skill_point_cost="0" name_key="lbu_SalvageName" desc_key="lbu_SalvageDesc" long_desc_key="lbu_SalvageDesc" icon="ui_game_symbol_scrap">
@@ -1990,7 +1959,7 @@
 	<remove xpath="progression/perks/perk[@name='perkDeadEye']"/>
 	<remove xpath="progression/perks/perk[@name='perkDemolitionsExpert']"/>
 	<remove xpath="progression/perks/perk[@name='perkJavelinMaster']"/>
-	<remove xpath="progression/perks/perk[@name='perkLuckyLooter']"/>
+	<!-- <remove xpath="progression/perks/perk[@name='perkLuckyLooter']"/> -->
 	<remove xpath="progression/perks/perk[@name='perkSalvageOperations']"/>
 	<remove xpath="progression/perks/perk[@name='perkBoomstick']"/>
 	<remove xpath="progression/perks/perk[@name='perkPummelPete']"/>

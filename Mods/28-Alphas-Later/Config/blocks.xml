@@ -1277,8 +1277,10 @@
 			<property name="FuelTitleText" value="xuiFlowers"/>
 			<property name="FuelTitleSprite" value="ui_game_symbol_flower"/>
 			<property name="FuelTitleSpriteAtlas" value="UIAtlas"/>
-			<property name="FuelTypesSprites" value="plantedChrysanthemum3Harvest,ItemIconAtlasGreyscale,plantedGoldenrod3HarvestPlayer,ItemIconAtlasGreyscale,plantedCotton3Harvest,ItemIconAtlasGreyscale"/>
+			
+			<property name="FuelTypesSprites" value="plantedGoldenrod3HarvestPlayer,ItemIconAtlasGreyscale,plantedChrysanthemum3Harvest,ItemIconAtlasGreyscale,plantedCotton3Harvest,ItemIconAtlasGreyscale" />
 
+			
 			<property name="OutputTypes" value="{honey,flowers,10,10,10,foodHoney,foodHoney,2,2,21600,43200,collector_complete_item}"/> <!--21600,43200-->
 			<property name="Outputs" value="honey,honey,honey,honey,honey,honey,honey,honey,honey"/>
 			<property name="ModTransformEnableNames" value="1,2,3"/>
@@ -3069,9 +3071,9 @@
 	<append xpath="/blocks/block[contains(@name,'Sink') and not (contains(@name,'Cabinet')) and not (contains(@name,'VariantHelper'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="clean"/>
-		<property name="WaterCapacity" value="4"/>
+		<property name="WaterCapacity" value="2"/>
 		<property name="InitialMin" value="0"/>
-		<property name="InitialMax" value="4"/>
+		<property name="InitialMax" value="2"/>
 		<property name="FillPerUse" value="1"/>
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
@@ -3079,9 +3081,9 @@
 	<append xpath="/blocks/block[contains(@name,'Toilet') and not (contains(@name,'VariantHelper'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="murky"/>
-		<property name="WaterCapacity" value="3"/>
+		<property name="WaterCapacity" value="2"/>
 		<property name="InitialMin" value="0"/>
-		<property name="InitialMax" value="3"/>
+		<property name="InitialMax" value="2"/>
 		<property name="FillPerUse" value="1"/>
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
@@ -3102,7 +3104,7 @@
 	<append xpath="/blocks/block[contains(@name,'drinkingfountain')]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="clean"/>
-		<property name="WaterCapacity" value="4"/>
+		<property name="WaterCapacity" value="3"/>
 		<property name="InitialMin" value="0"/>
 		<property name="InitialMax" value="3"/>
 		<property name="FillPerUse" value="1"/>
@@ -3122,9 +3124,9 @@
 	<append xpath="/blocks/block[contains(@name,'WaterCooler')]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="pure"/>
-		<property name="WaterCapacity" value="6"/>
+		<property name="WaterCapacity" value="4"/>
 		<property name="InitialMin" value="0"/>
-		<property name="InitialMax" value="6"/>
+		<property name="InitialMax" value="4"/>
 		<property name="FillPerUse" value="1"/>
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
@@ -3137,9 +3139,9 @@
 	<append xpath="/blocks/block[contains(@name,'CoffeeMaker') and not (contains(@name,'planted'))]">
 		<property name="HJDrinkSource" value="true"/>
 		<property name="DrinkKind" value="coffee"/>
-		<property name="DrinkCapacity" value="4"/>
+		<property name="DrinkCapacity" value="2"/>
 		<property name="DrinkInitialMin" value="0"/>
-		<property name="DrinkInitialMax" value="4"/>
+		<property name="DrinkInitialMax" value="2"/>
 		<property name="DrinkFillPerUse" value="1"/>
 		
 		<property name="DrinkPassiveRefillHours" value="0"/>
@@ -3172,9 +3174,9 @@
 		
 		<property name="HJDrinkSource" value="true"/>
 		<property name="DrinkKind" value="yuccajuice"/>
-		<property name="DrinkCapacity" value="6"/>
+		<property name="DrinkCapacity" value="2"/>
 		<property name="DrinkInitialMin" value="0"/>
-		<property name="DrinkInitialMax" value="4"/>
+		<property name="DrinkInitialMax" value="2"/>
 		<property name="DrinkFillPerUse" value="1"/>
 		
 		<property name="DrinkPassiveRefillHours" value="0"/>
