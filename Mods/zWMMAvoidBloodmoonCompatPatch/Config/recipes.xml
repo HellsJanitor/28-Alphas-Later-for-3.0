@@ -1,0 +1,3 @@
+﻿<config>
+	<set xpath="/recipes/recipe/ingredient[@name='drinkJarBoiledWater']/@name">resourceWaterUnit</set>
+</config>
