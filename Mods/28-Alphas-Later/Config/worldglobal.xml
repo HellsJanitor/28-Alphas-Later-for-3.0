@@ -1,9 +1,10 @@
 <HellsJanitor>
-    <!-- Keep enough ambient for particles/smoke/materials to render correctly -->
     <set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .10</set>
     <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.3, .025</set>
     <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .045</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientSkyDesat']/@value">.95, .0</set>
+	<!-- Do not set night desaturation to exactly 0.
+     Zero causes some lit smoke/gas particles to render black. -->
+    <set xpath="/worldglobal/environment/property[@name='ambientSkyDesat']/@value">.95, .05</set>
 
     <!-- Do not fully kill moon ambient; smoke and lit particles need a little fill -->
     <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .04</set>
