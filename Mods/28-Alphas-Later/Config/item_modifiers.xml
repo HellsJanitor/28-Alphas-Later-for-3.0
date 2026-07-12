@@ -80,7 +80,7 @@
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@blocked_tags">noMods,knife</set>
 	
 	<!-- *** cigar -->
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']">
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']">		
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="CustomIcon" value="apparelCigar"/>
 		<property name="DisplayType" value="clothingCigar"/>
@@ -88,10 +88,12 @@
 		<property name="TraderStageTemplate" value="modsTier2"/>
 		<property name="Material" value="Mplants"/>
 		<property name="EconomicValue" value="1000"/>
+		<property name="ShowQuality" value="true"/>
+		<property name="QualityMin" value="1"/>
 
-		<effect_group tiered="false">
-			<passive_effect name="BarteringBuying" operation="base_add" value=".1"/>
-			<passive_effect name="BarteringSelling" operation="base_add" value=".1"/>
+		<effect_group>
+			<passive_effect name="BarteringBuying" operation="base_add" value=".05,.06,.07,.08,.09,.1" tier="1,2,3,4,5,6"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".05,.06,.07,.08,.09,.1" tier="1,2,3,4,5,6"/>
 		</effect_group>
 	</set>
 	

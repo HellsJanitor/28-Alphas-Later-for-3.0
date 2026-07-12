@@ -533,7 +533,7 @@
 				<property name="particleOn" value="Particles/p_on"/>
 				<property name="particleDamaged" value="Particles/p_damaged"/>
 				<property name="particleBroken" value="Particles/p_broken"/>
-				<property name="fuelKmPerL" value=".35"/>
+				<property name="fuelKmPerL" value="2.5"/>
 				<property name="foodDrain" value=".002,.0101"/><!-- driving/turbo, motorcycle -->
 
 				<property name="gear1" value="
