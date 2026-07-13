@@ -95,6 +95,10 @@
 			<passive_effect name="BarteringBuying" operation="base_add" value=".05,.06,.07,.08,.09,.1" tier="1,2,3,4,5,6"/>
 			<passive_effect name="BarteringSelling" operation="base_add" value=".05,.06,.07,.08,.09,.1" tier="1,2,3,4,5,6"/>
 		</effect_group>
+		
+		<effect_group>
+			<display_value name="dBarteringBuying" value=".05,.06,.07,.08,.09,.1" tier="1,2,3,4,5,6"/>
+		</effect_group>
 	</set>
 	
 	<!-- *** helmet water purifier -->
