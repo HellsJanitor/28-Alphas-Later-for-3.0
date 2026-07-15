@@ -347,7 +347,10 @@
 	<set xpath="/items/item[starts-with(@name,'questRewardFarm')]/property[@class='Action0']/property[@name='Create_item_count']/@value">45,3</set>
 	
 	<!-- *** replace skill magazines with research papers -->
-	<set xpath="/items/item/property/property[@name='Create_item' and (contains(@value,'SkillMagazine'))]/@value">researchPaperBlank</set>
+	<!-- <set xpath="/items/item/property/property[@name='Create_item' and (contains(@value,'SkillMagazine'))]/@value">researchPaperBlank</set> -->
+	<csv xpath="//property[@name='Create_item' and contains(@value,'SkillMagazine') and not(contains(@value,'researchPaperBlank'))]/@value" delim="," op="add">researchPaperBlank</csv>
+
+	<csv xpath="//property[@name='Create_item' and contains(@value,'SkillMagazine')]/@value" delim="," op="remove">*SkillMagazine*</csv>
 	
 	<!-- *** allowed upgrade items for repair tools -->
 	<append xpath="//item/property//property[@name='Allowed_upgrade_items']/@value">,resourceBricks,resourceWoodScraps</append>
@@ -375,7 +378,8 @@
 		<!-- *** Legendaries -->
 		<!-- *** Red's Paintbrush -->
 		<item name="meleeWpnBladeLegendaryPaintBrush">
-			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,ignoreLootQualityCap"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
 			<property name="CustomIcon" value="meleeToolPaintTool"/>
 			<property name="DescriptionKey" value="meleeWpnBladeLegendaryPaintBrushDesc"/>
 			<property name="DisplayType" value="meleeKnife"/>
@@ -508,7 +512,8 @@
 		<!-- *** pitchfork -->
 		<item name="meleeWpnLegendaryPitchfork">
 			<property name="Extends" value="meleeWpnSpearT1IronSpear" param1="TintColor"/>
-			<property name="Tags" value="legendary,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill"/><!-- ,thrownWeapon -->
+			<property name="HJForcedLootLegacyTier" value="6"/>
+			<property name="Tags" value="legendary,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,ignoreLootQualityCap"/><!-- ,thrownWeapon -->
 			<property name="CustomIcon" value="meleeWpnLegendaryPitchfork"/>
 			<property name="DescriptionKey" value="meleeWpnLegendaryPitchforkDesc"/>
 			<property name="DisplayType" value="meleeSpear"/>
@@ -599,7 +604,8 @@
 		<!-- *** garden rake -->
 		<item name="meleeWpnLegendaryGardenRake">
 			<property name="Extends" value="meleeToolAxeT1IronFireaxe" param1="TintColor"/>
-			<property name="Tags" value="legendary,axe,melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,corpseRemoval"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
+			<property name="Tags" value="legendary,axe,melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,corpseRemoval,ignoreLootQualityCap"/>
 			<property name="CustomIcon" value="meleeWpnLegendaryGardenRake"/>
 			<property name="DescriptionKey" value="meleeWpnLegendaryGardenRakeDesc"/>
 			<property name="DisplayType" value="melee"/>
@@ -669,6 +675,7 @@
 		<!-- *** scythe -->
 		<item name="meleeWpnLegendaryScythe">
 			<property name="CreativeMode" value="Player"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="CrosshairUpAfterShot" value="false"/>
 			<property name="DescriptionKey" value="meleeWpnLegendaryScytheDesc"/>
@@ -690,7 +697,7 @@
 			<property name="SoundPickup" value="machete_grab"/>
 			<property name="SoundPlace" value="machete_place"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="legendary,machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<property name="Tags" value="legendary,machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,ignoreLootQualityCap"/>
 			<!-- <property name="TintColor" value="255,0,0"/> -->
 			<property name="TraderStageTemplate" value="baseTier0"/>
 
@@ -792,7 +799,8 @@
 		
 		<!-- *** piston hammer -->
 		<item name="meleeWpnLegendarySledgehammer">
-			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,legendary"/>
+			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,legendary,ignoreLootQualityCap"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
 			<property name="DisplayType" value="meleeHeavy"/>
 			<property name="HoldType" value="33"/>
 			<property name="Meshfile" value="#@modfolder:Resources/LegendaryMelee.unity3d?PistonHammer.prefab"/>
@@ -907,7 +915,8 @@
 		
 		<!-- *** Brushknife -->
 		<item name="meleeWpnBladeLegendaryBrushKnife">
-			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,ignoreLootQualityCap"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
 			<property name="CustomIcon" value="meleeWpnBladeLegendaryBrushKnife"/>
 			<property name="DescriptionKey" value="meleeWpnBladeLegendaryBrushKnifeDesc"/>
 			<property name="DisplayType" value="meleeKnife"/>
@@ -1039,7 +1048,8 @@
 		
 		<!-- *** Hydraulic Hammer -->
 		<item name="meleeWpnClubHydraulicHammer">
-			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill"/>
+			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,ignoreLootQualityCap"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeWpnClubHydraulicHammer"/>
 			<property name="DescriptionKey" value="meleeWpnClubHydraulicHammerDesc"/>
@@ -1152,7 +1162,8 @@
 		<!-- *** Knuckles -->
 		<item name="meleeWpnKnucklesLegendaryKnuckles">
 			<property name="Extends" value="meleeWpnKnucklesT1IronKnuckles"/>
-			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,canHaveCosmetic,knuckleSkill,corpseRemoval"/>
+			<property name="HJForcedLootLegacyTier" value="6"/>
+			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,canHaveCosmetic,knuckleSkill,corpseRemoval,ignoreLootQualityCap"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesLegendaryKnuckles"/>
 			<property name="DescriptionKey" value="meleeWpnKnucklesLegendaryKnucklesDesc"/>
 			<property name="Material" value="MmeleeWpnKnucklesParts"/>
