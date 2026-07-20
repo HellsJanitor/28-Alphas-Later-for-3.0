@@ -176,25 +176,8 @@
 		</trader_items>
 	</set>
 	
+	<!-- *** water cooler -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntWaterCoolerFull']/@name">cntWaterCoolerFullPlayer</set>
+	
 	<set xpath="//trader_item_group[@name='constructionSupplies']//item[@name='resourceConcreteMix']/@name">resourceCrushedSand</set>
-	
-	<!-- *** Q600 rework -->
-	
-	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='1']/@quality">100</set> -->
-	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='2']/@quality">200</set> -->
-	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='3']/@quality">300</set> -->
-	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='4']/@quality">400</set> -->
-	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='5']/@quality">500</set> -->
-	<!-- <set xpath="/traders/traderstage_templates/traderstage_template/entry[@quality='6']/@quality">600</set> -->
-	
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='1']/@quality">1,100</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='2']/@quality">101,200</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='3']/@quality">201,300</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='4']/@quality">301,400</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='5']/@quality">401,500</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='6']/@quality">501,600</set> -->
-	
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='1,6']/@quality">1,600</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group/item[@quality='2,6']/@quality">101,600</set> -->
-	<!-- <setattribute xpath="/traders/trader_item_groups/trader_item_group/item[@name='meleeToolRepairT3Nailgun']" name="quality">1,600</setattribute> -->
 </config>

@@ -352,6 +352,8 @@
 
 	<csv xpath="//property[@name='Create_item' and contains(@value,'SkillMagazine')]/@value" delim="," op="remove">*SkillMagazine*</csv>
 	
+	<csv xpath="//property[@name='Create_item' and contains(@value,'drinkJar')]/@value" delim="," op="remove">*drinkJar*</csv>
+	
 	<!-- *** allowed upgrade items for repair tools -->
 	<append xpath="//item/property//property[@name='Allowed_upgrade_items']/@value">,resourceBricks,resourceWoodScraps</append>
 	

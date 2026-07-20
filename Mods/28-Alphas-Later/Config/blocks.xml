@@ -325,7 +325,7 @@
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
 			<property name="TerrainIndex" value="CopperVoxel"/>
-			<property name="Texture" value="33" />
+			<property name="Texture" value="33"/>
 			<property name="MaxDamage" value="750"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
 			<drop event="Harvest" name="resourceCopper" count="105" tag="oreWoodHarvest"/>
@@ -397,7 +397,7 @@
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
 			<property name="TerrainIndex" value="ZincVoxel"/>
-			<property name="Texture" value="300" />
+			<property name="Texture" value="300"/>
 			<property name="MaxDamage" value="950"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
 			<drop event="Harvest" name="resourceZinc" count="105" tag="oreWoodHarvest"/>
@@ -1278,10 +1278,10 @@
 			<property name="FuelTitleSprite" value="ui_game_symbol_flower"/>
 			<property name="FuelTitleSpriteAtlas" value="UIAtlas"/>
 			
-			<property name="FuelTypesSprites" value="plantedGoldenrod3HarvestPlayer,ItemIconAtlasGreyscale,plantedChrysanthemum3Harvest,ItemIconAtlasGreyscale,plantedCotton3Harvest,ItemIconAtlasGreyscale" />
+			<property name="FuelTypesSprites" value="plantedGoldenrod3HarvestPlayer,ItemIconAtlasGreyscale,plantedChrysanthemum3Harvest,ItemIconAtlasGreyscale,plantedCotton3Harvest,ItemIconAtlasGreyscale"/>
 
 			
-			<property name="OutputTypes" value="{honey,flowers,10,10,10,foodHoney,foodHoney,2,2,21600,43200,collector_complete_item}"/> <!--21600,43200-->
+			<property name="OutputTypes" value="{honey,flowers,10,10,10,foodHoney,foodHoney,2,2,21600,43200,collector_complete_item}"/><!--21600,43200-->
 			<property name="Outputs" value="honey,honey,honey,honey,honey,honey,honey,honey,honey"/>
 			<property name="ModTransformEnableNames" value="1,2,3"/>
 
@@ -3023,6 +3023,9 @@
 			<drop event="Harvest" name="resourceScrapPolymers" count="2,4" tag="allToolsHarvest,perkJunkMiner"/>
 			<drop event="Destroy" name="resourceScrapPolymers" count="2,4" tag="allHarvest,perkJunkMiner"/>
 			<drop event="Fall" name="resourceScrapPolymers" count="3" prob="0.3" stick_chance="0"/>
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="5"/>
+			</property>
 			<property name="SortOrder1" value="B260"/>
 			<property name="SortOrder2" value="0600"/>
 			<property name="FilterTags" value="MC_building,SC_loot"/>
@@ -3053,6 +3056,9 @@
 			<drop event="Harvest" name="resourceScrapPolymers" count="2,4" tag="allToolsHarvest,perkJunkMiner"/>
 			<drop event="Destroy" name="resourceScrapPolymers" count="2,4" tag="allHarvest,perkJunkMiner"/>
 			<drop event="Fall" name="resourceScrapPolymers" count="3" prob="0.3" stick_chance="0"/>
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="5"/>
+			</property>
 			<property name="SortOrder1" value="B260"/>
 			<property name="SortOrder2" value="0602"/>
 			<property name="FilterTags" value="MC_building,SC_loot"/>
@@ -3065,10 +3071,250 @@
 			<property name="TankTransferPerUse" value="6"/>
 			<property name="CanPickup" value="false" param1="cntBarrelPlayerStorageQuad"/>
 		</block>
+		
+		<!-- *** player plumbing fixtures -->
+		<block name="utilitySinkPlayer">
+			<property name="CustomIcon" value="utilitySink"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Plumbing/utility_sinkPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="60"/><!-- disassemble value -->
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceScrapBrass" value="100"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="4" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="20,50" tag="WasteTreasuresSinkHarvest"/>
+			<drop event="Harvest" name="resourceScrapLead" count="20,50" tag="WasteTreasuresSinkHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing"/>
+			<property name="Tags" value="challenge_sinks"/>
+			<property name="IndexName" value="challenge_sinks"/>
+		</block>
+
+		<block name="sinkKitchenPlayer">
+			<property name="CustomIcon" value="sinkKitchen"/>
+			<property name="Extends" value="utilitySinkPlayer"/>
+			<property name="Model" value="@:Entities/Commercial/sinkKitchenPrefab.prefab"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing"/>
+		</block>
+
+		<block name="pedestalSinkPlayer">
+			<property name="CustomIcon" value="pedestalSink"/>
+			<property name="Extends" value="stoneNoUpgradeMaster" param1="SortOrder1,SortOrder2"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="MstoneFurniture"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/wallHungSinkPrefab.prefab"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="80"/><!-- disassemble value -->
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+				<property name="resourceScrapBrass" value="10"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="4" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+			<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing"/>
+			<property name="Tags" value="challenge_sinks"/>
+			<property name="IndexName" value="challenge_sinks"/>
+		</block>
+
+		<block name="wallMountSinkCommercialPlayer">
+			<property name="CustomIcon" value="wallMountSinkCommercial"/>
+			<property name="Extends" value="pedestalSinkPlayer"/>
+			<property name="Model" value="@:Entities/Commercial/sinkCommercialMountedPrefab.prefab"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="counterMountedSinkCommercialPlayer">
+			<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+			<property name="Extends" value="pedestalSinkPlayer"/>
+			<property name="Model" value="@:Entities/Commercial/sinkCounterMountedPrefab.prefab"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="counterMountedSinkCommercialOffsetPlayer">
+			<property name="CustomIcon" value="counterMountedSinkCommercialOffset"/>
+			<property name="Extends" value="pedestalSinkPlayer"/>
+			<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+			<property name="Model" value="@:Entities/Commercial/sinkCounterMountedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,-1"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>		
+
+		<block name="cntToilet01Player">
+			<property name="CustomIcon" value="cntToilet01"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="MstoneFurniture"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/toiletCommercial01Prefab.prefab"/>
+			<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="42"/>
+			<property class="RepairItems">
+				<property name="resourceMetalPipe" value="2"/>
+				<property name="resourceWood" value="4"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1,2"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing"/>
+			<property name="Tags" value="challenge_sinks"/>
+			<property name="IndexName" value="challenge_sinks"/>
+		</block>
+
+		<block name="cntToilet02Player">
+			<property name="CustomIcon" value="cntToilet02"/>
+			<property name="Extends" value="cntToilet01Player"/>
+			<property name="Model" value="@:Entities/LootContainers/toiletCommercial02Prefab.prefab"/>
+			<property name="SortOrder2" value="0401"/>
+		</block>
+
+		<block name="cntToilet03Player">
+			<property name="CustomIcon" value="cntToilet03"/>
+			<property name="Extends" value="cntToilet01Player"/>
+			<property name="Model" value="@:Entities/LootContainers/toiletCommercial03Prefab.prefab"/>
+			<property name="SortOrder2" value="0402"/>
+		</block>
+
+		<block name="urinalCommercialMountedPlayer">
+			<property name="CustomIcon" value="urinalCommercialMounted"/>
+			<property name="Extends" value="cntToilet01Player" param1="Class,CompositeFeatures,Mesh"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="@:Entities/Commercial/urinalCommercialMountedPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+
+		<block name="drinkingfountainSinglePlayer">
+			<property name="CustomIcon" value="drinkingfountainSingle"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Commercial/fountainCommercialMountedSinglePrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Path" value="solid"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+				<property name="resourceMetalPipe" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0500"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+			<property name="Tags" value="challenge_sinks"/>
+			<property name="IndexName" value="challenge_sinks"/>
+		</block>
+
+		<block name="drinkingfountainDoublePlayer">
+			<property name="CustomIcon" value="drinkingfountainDouble"/>
+			<property name="Extends" value="drinkingfountainSinglePlayer"/>
+			<property name="Model" value="@:Entities/Commercial/fountainCommercialMountedDoublePrefab.prefab"/>
+			<property name="SortOrder2" value="0501"/>
+		</block>
+
+		<block name="showerHeadPlayer">
+			<property name="CustomIcon" value="showerHead"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Plumbing/bathTubShowerHeadPrefab.prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="40"/><!-- disassemble value -->
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0200"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing"/>
+		</block>
+
+		<block name="showerHead02Player">
+			<property name="CustomIcon" value="showerHead02"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Plumbing/bathTubShowerHeadPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="40"/><!-- disassemble value -->
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0201"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing"/>
+		</block>
+
+		<block name="cntWaterCoolerFullPlayer">
+			<property name="CustomIcon" value="cntWaterCoolerFull"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/water_cooler_fullPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="300"/><!-- disassemble value -->
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="20"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="2,6" tag="allHarvest,perkJunkMiner"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,8"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B425"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
 	</append>
 	
+	<!-- *** new block shape helpers for plumbing fixtures -->
+	<set xpath="/blocks/block[@name='sinksToiletsBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">pedestalSinkPlayer,sinkKitchenPlayer,utilitySinkPlayer,wallMountSinkCommercialPlayer,counterMountedSinkCommercialPlayer,cntCabinetGraniteSinkHoleRound,faucet04,faucet02,showerHeadPlayer,drinkingfountainSinglePlayer,drinkingfountainDoublePlayer,urinalCommercialMountedPlayer</set>
+	<set xpath="/blocks/block[@name='toiletsBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">cntToilet01Player,cntToilet02Player,cntToilet03Player</set>
+	
 	<!-- *** water rework -->
-	<append xpath="/blocks/block[contains(@name,'Sink') and not (contains(@name,'Cabinet')) and not (contains(@name,'VariantHelper'))]">
+	<append xpath="/blocks/block[contains(@name,'Sink') and not (contains(@name,'Cabinet')) and not (contains(@name,'VariantHelper')) and not (contains(@name,'Player'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="clean"/>
 		<property name="WaterCapacity" value="2"/>
@@ -3078,7 +3324,7 @@
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
 
-	<append xpath="/blocks/block[contains(@name,'Toilet') and not (contains(@name,'VariantHelper'))]">
+	<append xpath="/blocks/block[contains(@name,'Toilet') and not (contains(@name,'VariantHelper')) and not (contains(@name,'Player'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="murky"/>
 		<property name="WaterCapacity" value="2"/>
@@ -3091,7 +3337,7 @@
 	<remove xpath="/blocks/block[contains(@name,'Toilet')]/property[@name='Class']"/>
 	<remove xpath="/blocks/block[contains(@name,'Toilet')]/property[@class='CompositeFeatures']//property[@name='LootList' and @value='toilet']"/>
 	
-	<append xpath="/blocks/block[contains(@name,'urinal')]">
+	<append xpath="/blocks/block[contains(@name,'urinal') and not (contains(@name,'Player'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="murky"/>
 		<property name="WaterCapacity" value="2"/>
@@ -3101,7 +3347,7 @@
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
 	
-	<append xpath="/blocks/block[contains(@name,'drinkingfountain')]">
+	<append xpath="/blocks/block[contains(@name,'drinkingfountain') and not (contains(@name,'Player'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="clean"/>
 		<property name="WaterCapacity" value="3"/>
@@ -3111,7 +3357,7 @@
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
 	
-	<append xpath="/blocks/block[contains(@name,'showerHead')]">
+	<append xpath="/blocks/block[contains(@name,'showerHead') and not (contains(@name,'Player'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="clean"/>
 		<property name="WaterCapacity" value="2"/>
@@ -3121,7 +3367,7 @@
 		<property name="SourceRespawnHours" value="0"/>
 	</append>
 
-	<append xpath="/blocks/block[contains(@name,'WaterCooler')]">
+	<append xpath="/blocks/block[contains(@name,'WaterCooler') and not (contains(@name,'Player'))]">
 		<property name="HJWaterSource" value="true"/>
 		<property name="WaterPurity" value="pure"/>
 		<property name="WaterCapacity" value="4"/>
@@ -3187,16 +3433,25 @@
 	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">
 		<property name="CanPickup" value="true" param1="cntBarrelPlasticSingle00"/>
 		<property name="DescriptionKey" value="cntBarrelPlasticSingle00Desc"/>
+		<property class="RepairItems">
+			<property name="resourceScrapPolymers" value="5"/>
+		</property>
 	</append>
 	
 	<append xpath="/blocks/block[@name='cntBarrelPlasticQuadA']">
 		<property name="CanPickup" value="true" param1="cntBarrelPlasticQuadB"/>
 		<property name="DescriptionKey" value="cntBarrelPlasticQuadBDesc"/>
+		<property class="RepairItems">
+			<property name="resourceScrapPolymers" value="5"/>
+		</property>
 	</append>
 	
 	<append xpath="/blocks/block[@name='cntBarrelPlasticQuadB']">
 		<property name="CanPickup" value="true" param1="cntBarrelPlasticQuadB"/>
 		<property name="DescriptionKey" value="cntBarrelPlasticQuadBDesc"/>
+		<property class="RepairItems">
+			<property name="resourceScrapPolymers" value="5"/>
+		</property>
 	</append>
 	
 	<!-- *** bottles -->
@@ -3383,9 +3638,9 @@
 	<set xpath="//block[@name='palletBagFertilizerSingleBent']//drop[@name='resourceFertilizer']/@count">1,2</set>
 	<set xpath="//block[@name='palletBagFertilizerSingleFlat']//drop[@name='resourceFertilizer']/@count">1,2</set>
 	
-	<!-- *** carboard boxes loot -->	
+	<!-- *** carboard boxes loot -->
 	<prepend xpath="/blocks/block[@name='palletBrownBoxesBase']">
-	<property name="Class" value="CompositeTileEntity" />
+		<property name="Class" value="CompositeTileEntity"/>
 		<property class="CompositeFeatures">
 			<property class="TEFeatureStorage">
 				<property name="LootList" value="cardboardboxloot"/>
@@ -3399,20 +3654,21 @@
 	
 	<!-- *** adds craftable bath tubs and kitchen sink to sink variant helper -->
 	<append xpath="/blocks/block[@name='sinksToiletsBlockVariantHelper']//property[@name='PlaceAltBlockValue']/@value">
-	,cntBathTubEmpty,decoClawFootBathTub,sinkKitchen
+	,cntBathTubEmpty,decoClawFootBathTub
 	</append>
 	
 	<!-- *** adds medicine cabinet to cabinet shape helper -->
 	<append xpath="/blocks/block[@name='cntWoodFurnitureBlockVariantHelper2']//property[@name='PlaceAltBlockValue']/@value">,cntMedicineCabinetPlayer</append>
 	
 	<!-- *** adds chance of solar cell from looting solar banks -->
-	<insertafter xpath="/blocks/block[@name='cntCollapsedSolarbank']/property[@name='CreativeMode']">
+	<prepend xpath="/blocks/block[@name='cntCollapsedSolarbank']">
+		<property name="Class" value="CompositeTileEntity"/>
 		<property class="CompositeFeatures">
 			<property class="TEFeatureStorage">
 				<property name="LootList" value="collapsedSolarBank"/>
 			</property>
 		</property>
-	</insertafter>
+	</prepend>
 	
 	<!-- *** sawblade from harvesting tablesaw -->
 	<append xpath="/blocks/block[@name='tableSaw']">

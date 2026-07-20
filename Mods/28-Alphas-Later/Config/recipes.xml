@@ -265,7 +265,7 @@
 		
 		<!-- *** terrarium -->
 		<recipe name="decoReptileTerrarium" count="1">
-			<ingredient name="glassBusinessSheet" count="6"/>
+			<ingredient name="glassBlockVariantHelper" count="6"/>
 			<ingredient name="resourceScrapIron" count="30"/>			
 		</recipe>
 		

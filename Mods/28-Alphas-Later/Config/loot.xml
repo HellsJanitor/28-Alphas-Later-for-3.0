@@ -67,7 +67,7 @@
 	<remove xpath="/lootcontainers/lootgroup/item[@name='drinkJarEmpty']"/>
 	
 	<!-- *** remove drinks from loot -->
-	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'drink') or (contains(@name,'Drink')) and not (contains(@name,'Beer'))]"/>
+	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'drink') and not (@name='drinkJarBeer')]"/>
 	
 	<!-- *** cooling mesh and insulated liners -->
 	<append xpath="/lootcontainers/lootgroup[@name='modArmorT2']">

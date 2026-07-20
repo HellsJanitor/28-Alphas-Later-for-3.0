@@ -290,92 +290,96 @@
 	
 	<!-- *** adds frozen variants to the snow biome -->
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesSnow']">
-		<e n="zombieArleneFrozen"/>
-		<e n="zombieMarleneFrozen"/>
-		<e n="zombiePartyGirlFrozen"/>
-		<e n="zombieNurseFrozen"/>
-		<e n="zombieJoeFrozen"/>
-		<e n="zombieSteveFrozen"/>
-		<e n="zombieTomClarkFrozen"/>
-		<e n="zombieBusinessManFrozen"/>
-		<e n="zombieSpiderFrozen"/>
-		<e n="zombieBoeFrozen"/>
-		<e n="zombieMaleHazmatFrozen"/>
-		<e n="zombieJanitorFrozen"/>
-		<e n="zombieMoeFrozen"/>
-		<e n="zombieLabFrozen"/>
-		<e n="zombieDarleneFrozen"/>
-		<e n="zombieYoFrozen"/>
-		<e n="zombieUtilityWorkerFrozen"/>
-		<e n="zombieBikerFrozen"/>
-		<e n="zombieFemaleFatFrozen"/>
-		<e n="zombieFatHawaiianFrozen"/>
-		<e n="zombieSkateboarderFrozen"/>
-		<e n="zombieSoldierFrozen"/>
-		<e n="zombieSteveCrawlerFrozen"/>
+		<e n="zombieArleneFrozen" p=".25"/>
+		<e n="zombieMarleneFrozen" p=".25"/>
+		<e n="zombiePartyGirlFrozen" p=".25"/>
+		<e n="zombieNurseFrozen" p=".25"/>
+		<e n="zombieJoeFrozen" p=".25"/>
+		<e n="zombieSteveFrozen" p=".25"/>
+		<e n="zombieTomClarkFrozen" p=".25"/>
+		<e n="zombieBusinessManFrozen" p=".25"/>
+		<e n="zombieSpiderFrozen" p=".25"/>
+		<e n="zombieBoeFrozen" p=".25"/>
+		<e n="zombieMaleHazmatFrozen" p=".25"/>
+		<e n="zombieJanitorFrozen" p=".25"/>
+		<e n="zombieMoeFrozen" p=".25"/>
+		<e n="zombieLabFrozen" p=".25"/>
+		<e n="zombieDarleneFrozen" p=".25"/>
+		<e n="zombieYoFrozen" p=".25"/>
+		<e n="zombieUtilityWorkerFrozen" p=".25"/>
+		<e n="zombieBikerFrozen" p=".25"/>
+		<e n="zombieFemaleFatFrozen" p=".25"/>
+		<e n="zombieFatHawaiianFrozen" p=".25"/>
+		<e n="zombieSkateboarderFrozen" p=".25"/>
+		<e n="zombieSoldierFrozen" p=".25"/>
+		<e n="zombieSteveCrawlerFrozen" p=".25"/>
 	</append>
 	
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesSnowNight']">
-		<e n="zombieArleneFrozen"/>
-		<e n="zombieMarleneFrozen"/>
-		<e n="zombiePartyGirlFrozen"/>
-		<e n="zombieNurseFrozen"/>
-		<e n="zombieJoeFrozen"/>
-		<e n="zombieSteveFrozen"/>
-		<e n="zombieTomClarkFrozen"/>
-		<e n="zombieBusinessManFrozen"/>
-		<e n="zombieSpiderFrozen"/>
-		<e n="zombieBoeFrozen"/>
-		<e n="zombieMaleHazmatFrozen"/>
-		<e n="zombieJanitorFrozen"/>
-		<e n="zombieMoeFrozen"/>
-		<e n="zombieLabFrozen"/>
-		<e n="zombieDarleneFrozen"/>
-		<e n="zombieYoFrozen"/>
-		<e n="zombieUtilityWorkerFrozen"/>
-		<e n="zombieBikerFrozen"/>
-		<e n="zombieFemaleFatFrozen"/>
-		<e n="zombieFatHawaiianFrozen"/>
-		<e n="zombieSkateboarderFrozen"/>
-		<e n="zombieSoldierFrozen"/>
-		<e n="zombieSteveCrawlerFrozen"/>
+		<e n="zombieArleneFrozen" p=".25"/>
+		<e n="zombieMarleneFrozen" p=".25"/>
+		<e n="zombiePartyGirlFrozen" p=".25"/>
+		<e n="zombieNurseFrozen" p=".25"/>
+		<e n="zombieJoeFrozen" p=".25"/>
+		<e n="zombieSteveFrozen" p=".25"/>
+		<e n="zombieTomClarkFrozen" p=".25"/>
+		<e n="zombieBusinessManFrozen" p=".25"/>
+		<e n="zombieSpiderFrozen" p=".25"/>
+		<e n="zombieBoeFrozen" p=".25"/>
+		<e n="zombieMaleHazmatFrozen" p=".25"/>
+		<e n="zombieJanitorFrozen" p=".25"/>
+		<e n="zombieMoeFrozen" p=".25"/>
+		<e n="zombieLabFrozen" p=".25"/>
+		<e n="zombieDarleneFrozen" p=".25"/>
+		<e n="zombieYoFrozen" p=".25"/>
+		<e n="zombieUtilityWorkerFrozen" p=".25"/>
+		<e n="zombieBikerFrozen" p=".25"/>
+		<e n="zombieFemaleFatFrozen" p=".25"/>
+		<e n="zombieFatHawaiianFrozen" p=".25"/>
+		<e n="zombieSkateboarderFrozen" p=".25"/>
+		<e n="zombieSoldierFrozen" p=".25"/>
+		<e n="zombieSteveCrawlerFrozen" p=".25"/>
 	</append>
+	
+	<!-- <setattribute xpath="/entitygroups/entitygroup/e[@n='zombieChuck']" name="p">1.25</setattribute> -->
 	
 	<!-- *** desert zombies *** -->
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesDesert']">
-		<e n="zombieArleneCowboy"/>
-		<e n="zombieMarleneCowboy"/>
-		<e n="zombiePartyGirlCowboy"/>
-		<e n="zombieJoeCowboy"/>
-		<e n="zombieSteveCowboy"/>
-		<e n="zombieTomClarkCowboy"/>
-		<e n="zombieBusinessManCowboy"/>
-		<e n="zombieBoeCowboy"/>
-		<e n="zombieMoeCowboy"/>
-		<e n="zombieDarleneCowboy"/>
-		<e n="zombieYoCowboy"/>
-		<e n="zombieFemaleFatCowboy"/>
+		<e n="zombieArleneCowboy" p=".25"/>
+		<e n="zombieMarleneCowboy" p=".25"/>
+		<e n="zombiePartyGirlCowboy" p=".25"/>
+		<e n="zombieJoeCowboy" p=".25"/>
+		<e n="zombieSteveCowboy" p=".25"/>
+		<e n="zombieTomClarkCowboy" p=".25"/>
+		<e n="zombieBusinessManCowboy" p=".25"/>
+		<e n="zombieBoeCowboy" p=".25"/>
+		<e n="zombieMoeCowboy" p=".25"/>
+		<e n="zombieDarleneCowboy" p=".25"/>
+		<e n="zombieYoCowboy" p=".25"/>
+		<e n="zombieFemaleFatCowboy" p=".25"/>
 		<e n="zombieWightFeralCowboy" p=".01"/>
 	</append>
 	
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesDesertNight']">
-		<e n="zombieArleneCowboy"/>
-		<e n="zombieMarleneCowboy"/>
-		<e n="zombiePartyGirlCowboy"/>
-		<e n="zombieJoeCowboy"/>
-		<e n="zombieSteveCowboy"/>
-		<e n="zombieTomClarkCowboy"/>
-		<e n="zombieBusinessManCowboy"/>
-		<e n="zombieBoeCowboy"/>
-		<e n="zombieMoeCowboy"/>
-		<e n="zombieDarleneCowboy"/>
-		<e n="zombieYoCowboy"/>
-		<e n="zombieFemaleFatCowboy"/>
+		<e n="zombieArleneCowboy" p=".25"/>
+		<e n="zombieMarleneCowboy" p=".25"/>
+		<e n="zombiePartyGirlCowboy" p=".25"/>
+		<e n="zombieJoeCowboy" p=".25"/>
+		<e n="zombieSteveCowboy" p=".25"/>
+		<e n="zombieTomClarkCowboy" p=".25"/>
+		<e n="zombieBusinessManCowboy" p=".25"/>
+		<e n="zombieBoeCowboy" p=".25"/>
+		<e n="zombieMoeCowboy" p=".25"/>
+		<e n="zombieDarleneCowboy" p=".25"/>
+		<e n="zombieYoCowboy" p=".25"/>
+		<e n="zombieFemaleFatCowboy" p=".25"/>
 		<e n="zombieWightFeralCowboy" p=".5"/>
 	</append>
 	
-	<remove xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/e[contains(@n,'Mutated')]"/>
-	<remove xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/e[contains(@n,'Mutated')]"/>
+	<!-- <setattribute xpath="/entitygroups/entitygroup/e[@n='zombieRancher']" name="p">1.25</setattribute> -->
+	
+	<remove xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/e[contains(@n,'Charged') or (contains(@n,'Infernal'))]"/>
+	<remove xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/e[contains(@n,'Charged') or (contains(@n,'Infernal'))]"/>
 	
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
 		<e n="zombieHellsHumanExperiment" p=".25"/>

@@ -252,6 +252,10 @@ cntBarrelPlayerStorageQuadDesc,Store up to [FFB400]120[-] water in these barrels
 cntBarrelPlayerStorageSingle,Repaired Water Barrel
 cntBarrelPlayerStorageSingleDesc,Store up to [FFB400]30[-] water in this barrel.\n\nPut the barrel in your hotbar/toolbelt to place it.
 cntMedicineCabinetPlayer,Player Medical Cabinet
+cntToilet01Player,Toilet
+cntToilet02Player,Fancy Toilet
+cntToilet03Player,Commercial Toilet
+cntWaterCoolerFullPlayer,Water Cooler
 cntZPackExternalCorpseBag,Research Loot
 cntZPackExternalCorpseBagBiker,Biker Research Loot
 cntZPackExternalCorpseBagBoss,Boss Research Loot
@@ -268,6 +272,8 @@ cntZPackExternalCorpseBagStrong,Tough Zombie Research Loot
 cntZPackExternalCorpseBagThug,Thug Research Loot
 cntZPackExternalCorpseBagTourist,Tourist Research Loot
 cntZPackExternalCorpseBagUtility,Utility Worker Research Loot
+counterMountedSinkCommercialOffsetPlayer,Commercial Sink
+counterMountedSinkCommercialPlayer,Commercial Sink
 craftingArmorDesc,"Increase [DECEA3]Armour Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
 craftingBladesDesc,"Increase [DECEA3]Blades Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
 craftingBowsDesc,"Increase [DECEA3]Bows Crafting[-] by gathering research papers.\nWhen enough research has been gathered, [DECEA3]purchase[-] your skills."
@@ -301,6 +307,8 @@ dewCollectorHasDirtyWater,{0} Open {1} ([228B22]Collect[-])
 dewCollectorHasWater,{0} Open {1} ([228B22]Collect[-])
 drinkBottleEmpty,Empty Bottle
 drinkBottleEmptyDesc,An empty bottle. Used for home-brewed beer & molotov cocktails.
+drinkingfountainDoublePlayer,Drinking Fountain Double
+drinkingfountainSinglePlayer,Drinking Fountain Single
 drinkJarBoiledWater,Boiled Water
 drinkJarBoiledWaterDesc,Almost safe to drink ...
 drinkJarDistilledWater,Distilled Water
@@ -475,6 +483,7 @@ oreChromiumBoulder,Chromium Ore Boulder
 oreCopperBoulder,Copper Ore Boulder
 oreLimestoneBoulder,Limestone Ore Boulder
 oreZincBoulder,Zinc Ore Boulder
+pedestalSinkPlayer,Pedastal Sink
 perkAdvancedEngineeringDesc,Engineer advanced items faster with reduced costs at workstations.
 perkBarBrawling5AdrenalineHealingDesc,Drinking moonshine no longer blurs your vision.
 perkBarBrawling5AdrenalineHealingLongDesc,Liquored Up: Drinking Grandpa's Moonshine no longer blurs your vision.
@@ -679,6 +688,9 @@ ropeVariantHelper,Rope
 ropeVariantHelperDesc,"Craft various decorative & climbable rope blocks with this helper.\n\n\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the menu. Click or Shift-Click to select a variant with which to build."
 ShotgunRepairKit,Shotgun Repair Kit
 ShotgunRepairKitDesc,"This Repair Kit is used to repair double barrel, pump action, and auto shotguns."
+showerHead02Player,Shower Head 02
+showerHeadPlayer,Shower Head
+sinkKitchenPlayer,Kitchen Sink
 SledgehammerRepairKit,Sledgehammer Repair Kit
 SledgehammerRepairKitDesc,This Repair Kit is used to repair steel sledgehammers.
 SpearRepairKit,Spear Repair Kit
@@ -747,6 +759,8 @@ unit_chromium,Chrome
 unit_copper,Copper
 unit_limestone,Limestone
 unit_zinc,Zinc
+urinalCommercialMountedPlayer,Urinal
+utilitySinkPlayer,Utility Sink
 vehicleDirtBike,The Ruin Runner
 vehicleDirtBikeChassis,The Ruin Runner Chassis
 vehicleDirtBikeHandlebars,The Ruin Runner Handlebars
@@ -772,6 +786,7 @@ vehiclesT2,"Tier 2: Dirt Bike, Quad Bike, Oil, & Gas"
 vehiclesT3,"Tier 3: Motorcycle, Dune Buggy & Stacks of Gas Cans"
 vehiclesT4,"Tier 4: 4x4, Semi Truck & Semi Trailer"
 venomDesc,Key ingredient for antivenom.
+wallMountSinkCommercialPlayer,Commercial Sink
 woodLogPillar100Desc,Wood logs are good for crude walls or palisades or as fuel for campfires.\n\nPlace them as a block and chop them with an axe for wood planks.
 workstationsT1-1,Chicken Coop
 workstationsT1-2,Butcher's Block

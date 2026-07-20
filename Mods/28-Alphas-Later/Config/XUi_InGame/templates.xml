@@ -1,4 +1,4 @@
-<HellsJanitor>	
+<HellsJanitor>
 	<set xpath="/templates/skill_crafting_entry">
 		<panel disableautobackground="true" controller="_28AlphasLater.UI.XUiC_SkillCraftingInfoEntry_Research, 28AL-Harmony" width="${width}" height="${height}" style="press, hover, scroll" color_bg_bought="140,130,100,255" color_bg_available="[lightGrey]" color_bg_locked="[darkGrey]" color_lbl_available="[white]" color_lbl_locked="[lightGrey]" color_lbl_nerfed="204,17,17" color_lbl_buffed="17,204,17" visible="{nothiddenbypager}">
 			<!-- row backgrounds / selection -->
@@ -20,23 +20,24 @@
 			<sprite depth="12" pos="610,-45" style="icon30px" sprite="ui_game_symbol_check" pivot="center" visible="{showcomplete}"/>
 
 			<!-- RIGHT-SIDE PURCHASE CLUSTERS -->
-<!-- Quality items: cart as bg + RP cost + next-quality bar + "1/2" -->
-<rect name="rpClusterQuality" pos="${width-128},0" width="128" height="${height}" disableautobackground="true" visible="{notcompletequality}">
-	<button depth="7" pos="96,-40" style="icon32px, press, hover" sprite="ui_game_symbol_shopping_cart" pivot="center" color="255,255,255,250" tooltip="Purchase next tier for {nextpoints} research"/>
-	<label depth="13" pos="134,-14" width="80" height="24" text="{nextpoints}" font_size="28" pivot="right" justify="center" effect="outline"/>
-	<sprite depth="11" name="nextQualityBg" width="48" height="14" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="122,-66" pivot="right" foregroundlayer="true"/>
-	<filledsprite depth="12" name="nextQuality" width="48" height="14" sprite="menu_empty2px" color="{nextqualitycolor}" fill="1" type="filled" pos="122,-66" pivot="right" foregroundlayer="true"/>
-	<label depth="13" name="nextQualityText" pos="100,-66" width="80" height="20" text="{nextqualitytext}" font_size="22" pivot="right" justify="right" effect="outline"/>
-</rect>
+			<!-- Quality items: cart as bg + RP cost + next-quality bar + "1/2" -->
+			<rect name="rpClusterQuality" pos="${width-128},0" width="128" height="${height}" disableautobackground="true" visible="{notcompletequality}">
+				<button depth="7" pos="96,-40" style="icon32px, press, hover" sprite="ui_game_symbol_shopping_cart" pivot="center" color="255,255,255,250"/> tooltip="Purchase next tier for {nextpoints} research"
+				<label depth="13" pos="134,-14" width="80" height="24" text="{nextpoints}" font_size="28" pivot="right" justify="center" effect="outline"/>
+				<sprite depth="11" name="nextQualityBg" width="48" height="14" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="122,-66" pivot="right" foregroundlayer="true"/>
+				<filledsprite depth="12" name="nextQuality" width="48" height="14" sprite="menu_empty2px" color="{nextqualitycolor}" fill="1" type="filled" pos="122,-66" pivot="right" foregroundlayer="true"/>
+				<label depth="13" name="nextQualityText" pos="100,-66" width="80" height="20" text="{nextqualitytext}" font_size="22" pivot="right" justify="right" effect="outline"/>
+			</rect>
 
-<!-- Non-quality items: cart bg + RP cost only -->
-<rect name="rpClusterNoQuality" pos="${width-128},0" width="128" height="${height}" disableautobackground="true" visible="{notcompletenoquality}">
-	<button depth="7" pos="96,-40" style="icon32px, press, hover" sprite="ui_game_symbol_shopping_cart" pivot="center" color="255,255,255,250" tooltip="Purchase next tier for {nextpoints} research"/>
-	<label depth="13" pos="134,-14" width="80" height="24" text="{nextpoints}" font_size="28" pivot="right" justify="center" effect="outline"/>
-</rect>
+			<!-- Non-quality items: cart bg + RP cost only -->
+			<rect name="rpClusterNoQuality" pos="${width-128},0" width="128" height="${height}" disableautobackground="true" visible="{notcompletenoquality}">
+				<button depth="7" pos="96,-40" style="icon32px, press, hover" sprite="ui_game_symbol_shopping_cart" pivot="center" color="255,255,255,250"/> tooltip="Purchase next tier for {nextpoints} research"
+				<label depth="13" pos="134,-14" width="80" height="24" text="{nextpoints}" font_size="28" pivot="right" justify="center" effect="outline"/>
+			</rect>
 
-<!-- Buy button -->
-<button depth="15" name="btnBuy" pos="${width-32},-${Round(height/2,0)}" width="16" height="16" style="icon32px, press, hover" sprite="ui_game_symbol_party" pivot="center" tooltip="Purchase next tier for {nextpoints} research"/></panel>
+			<!-- Buy button -->
+			<button depth="15" name="btnBuy" pos="${width-32},-${Round(height/2,0)}" width="16" height="16" style="icon32px, press, hover" sprite="ui_game_symbol_party" pivot="center"/> tooltip="Purchase next tier for {nextpoints} research"
+		</panel>
 	</set>
 
 	<set xpath="/templates/dewcollector_stack/rect/sprite[@sprite='ui_game_symbol_water']/@sprite">ui_game_symbol_clock</set>
