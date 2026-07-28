@@ -92,8 +92,17 @@
 	<!-- *** remove vanilla king size bed -->
 	<remove xpath="//recipe[@name='bed02BlockVariantHelper']"/>
 	
-	<!-- *** remove vanilla apiary -->
+	<!-- *** remove vanilla apiary and tools -->
 	<remove xpath="//recipe[@name='cntApiary']"/>	
+	<remove xpath="/recipes/recipe[@name='toolApiaryBroodBox']"/>
+	<remove xpath="/recipes/recipe[@name='toolApiaryExtractor']"/>
+	<remove xpath="/recipes/recipe[@name='toolApiarySmoker']"/>
+	
+	<!-- *** remove vanilla chicken coop and tools -->
+	<remove xpath="/recipes/recipe[@name='cntChickenCoop']"/>
+	<remove xpath="/recipes/recipe[@name='toolChickenCoopLamp']"/>
+	<remove xpath="/recipes/recipe[@name='toolChickenCoopNestingBox']"/>
+	<remove xpath="/recipes/recipe[@name='toolChickenCoopRun']"/>
 	
 	<append xpath="/recipes">
 		<!-- *** boiled water from snow (+jar) -->
@@ -957,6 +966,7 @@
 		<!-- *** roast chicken -->
 		<recipe name="foodRawChicken" count="1" craft_time="0" craft_area="butchersTable">
 			<ingredient name="tameChicken" count="1"/>
+			<secondary_output name="resourceFeather" count="25"/>
 		</recipe>
 		
 		<recipe name="foodRoastChicken" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
@@ -970,6 +980,7 @@
 		
 		<recipe name="foodRawRabbit" count="1" craft_time="0" craft_area="butchersTable">
 			<ingredient name="tameRabbit" count="1"/>
+			<secondary_output name="resourceLeather" count="4"/>
 		</recipe>
 		
 		<!-- *** weapon/tool/armour specific repair kits -->
@@ -1322,6 +1333,9 @@
 			<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="resourceCropHopsFlower"/>
 		</effect_group>
 	</set>
+	
+	<!-- *** chicken recipes -->
+	<set xpath="/recipes/recipe/ingredient[@name='domesticatedChicken']/@name">foodRawChicken</set>
 	
 	<!-- *** remove vanilla drink recipes -->
 	<remove xpath="/recipes/recipe[@name='drinkJarBoiledWater']"/>

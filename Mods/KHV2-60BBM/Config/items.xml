@@ -4,6 +4,7 @@
 		<item name="schematicBackpackTier1">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CustomIcon" value="cntBackpack01"/>
+			<property name="Unlocks" value="backpackUpgradeTier1"/>
 			<effect_group tiered="false">
 				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackKnowledge" level="1"/> -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="backpackUpgradeTier1" operation="set" value="1"/>
@@ -12,6 +13,7 @@
 		<item name="schematicBackpackTier2">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CustomIcon" value="cntBackpack03"/>
+			<property name="Unlocks" value="backpackUpgradeTier2"/>
 			<effect_group tiered="false">
 				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackKnowledge" level="1"/> -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="backpackUpgradeTier2" operation="set" value="1"/>
@@ -20,6 +22,7 @@
 		<item name="schematicBackpackTier3">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CustomIcon" value="cntDuffle01"/>
+			<property name="Unlocks" value="backpackUpgradeTier3"/>
 			<effect_group tiered="false">
 				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkBackpackKnowledge" level="1"/> -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="backpackUpgradeTier3" operation="set" value="1"/>

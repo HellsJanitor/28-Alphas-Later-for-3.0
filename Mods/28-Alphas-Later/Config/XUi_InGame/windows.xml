@@ -998,13 +998,13 @@
 	</insertafter>
 	
 	<!-- *** removes POI names and tier 'skulls' -->
-	<remove xpath="/windows/window[@name='windowEntering']/rect/label[@name='TextContent']"/>
-	<remove xpath="/windows/window[@name='windowEntering']/rect/grid"/>
-	<remove xpath="/windows/window[@name='windowLocation']/grid"/>
+	<!-- <remove xpath="/windows/window[@name='windowEntering']/rect/label[@name='TextContent']"/> -->
+	<!-- <remove xpath="/windows/window[@name='windowEntering']/rect/grid"/> -->
+	<!-- <remove xpath="/windows/window[@name='windowLocation']/grid"/> -->
 	
-	<set xpath="/windows/window[@name='windowLocation']/@height">40</set>
-	<set xpath="/windows/window[@name='windowLocation']/sprite/@height">34</set>
-	<set xpath="/windows/window[@name='windowLocation']/label/@pos">6,0</set>
+	<!-- <set xpath="/windows/window[@name='windowLocation']/@height">40</set> -->
+	<!-- <set xpath="/windows/window[@name='windowLocation']/sprite/@height">34</set> -->
+	<!-- <set xpath="/windows/window[@name='windowLocation']/label/@pos">6,0</set> -->
 	
 	<append xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='searchControls']">
 		<button depth="4" name="outputsButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_backpack" pivot="center" tooltip_key="HJXuiOutputsLabel" sound="[paging_click]"/>
@@ -1033,10 +1033,10 @@
 	<set xpath="/windows/window[@name='windowBagStorage']/grid[@name='queue']/@cols">10</set>
 
 	<append xpath="/windows/window[@name='windowBagStorage']/rect[@name='header']/rect[@controller='ContainerStandardControls']">
-		<button depth="30" name="btnPrevPage" sprite="ui_game_symbol_arrow_left" tooltip="Previous Page" pos="34,-22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{showPageControls}"/>
+		<button depth="30" name="btnPrevPage" sprite="ui_game_symbol_arrow_left" tooltip="Previous Page" pos="-166,-22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{showPageControls}"/>
 
-		<label depth="30" name="lblPage" pos="74,-21" width="60" height="28" text="-/-" font_size="26" justify="center" pivot="center" color="[white]" visible="true"/>
-		<button depth="30" name="btnNextPage" sprite="ui_game_symbol_arrow_right" tooltip="Next Page" pos="124,-22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{showPageControls}"/>
+		<label depth="30" name="lblPage" pos="-126,-21" width="60" height="28" text="-/-" font_size="26" justify="center" pivot="center" color="[white]" visible="true"/>
+		<button depth="30" name="btnNextPage" sprite="ui_game_symbol_arrow_right" tooltip="Next Page" pos="-76,-22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{showPageControls}"/>
 	</append>
 	
 </HellsJanitor>

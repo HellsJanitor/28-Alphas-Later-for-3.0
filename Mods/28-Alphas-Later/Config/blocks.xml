@@ -1205,12 +1205,12 @@
 			<property name="HJ_HideCollectorStorageUi" value="false"/>
 			<property name="HJWaterGaugeEnabled" value="false"/>
 
-			<property name="FuelTypes" value="{feed,foodCornMeal}"/>
+			<property name="FuelTypes" value="{feed,resourceChickenFeed}"/>
 			<property name="FuelGridHeight" value="1"/>
 			<property name="FuelTitleText" value="xuiFeed"/>
 			<property name="FuelTitleSprite" value="ui_game_symbol_crops"/>
 			<property name="FuelTitleSpriteAtlas" value="UIAtlas"/>
-			<property name="FuelTypesSprites" value="foodCornMeal,ItemIconAtlasGreyscale"/>
+			<property name="FuelTypesSprites" value="resourceChickenFeed,ItemIconAtlasGreyscale"/>
 
 			<property name="OutputTypes" value="{egg,feed,10,10,10,foodEgg,foodEgg,2,2,21600,43200,collector_complete_item}"/><!--21600,43200-->
 			<property name="Outputs" value="egg,egg,egg,egg,egg,egg,egg,egg,egg"/>
@@ -3307,6 +3307,14 @@
 			<property name="SortOrder2" value="0000"/>
 			<property name="FilterTags" value="MC_building,SC_loot"/>
 		</block>
+	</append>
+	
+	<append xpath="/blocks/block[@name='showerHead']">
+		<drop event="Destroy" name="showerHeadPlayer" count="1"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='showerHead02']">
+		<drop event="Destroy" name="showerHead02Player" count="1"/>
 	</append>
 	
 	<!-- *** new block shape helpers for plumbing fixtures -->

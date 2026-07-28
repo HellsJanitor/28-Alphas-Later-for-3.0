@@ -5,6 +5,14 @@
 The idea behind this mod is to slow progression, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
 > [!IMPORTANT]
+>28/7/26 mod version 3.1.0.0
+
+ - Known issues: The truck's trailer visuals need some polish in multiplayer
+ 
+> [!CAUTION]
+> *Shouldn't* require a new save, but always make a backup, just in case.
+
+> [!IMPORTANT]
 >25/6/26 mod version 3.0.0.0
 
  - Known Issues: OCBMicroSplat is **not** updated as yet, so custom ore nodes have vanilla textures.
