@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="SS_Terrain" />
+  <DisplayName value="SS Terrain" />
+  <Description value="Adds terrain with custom textures beyond vanilla 7D2D." />
+  <Author value="LxSun" />
+  <Version value="1.1" />
+  <Website value="" />
+</xml>

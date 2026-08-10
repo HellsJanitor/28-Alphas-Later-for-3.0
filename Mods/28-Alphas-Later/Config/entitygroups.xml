@@ -425,6 +425,16 @@
 		<e n="zombieHellsWendigo2"/>
 	</append>
 	
+	<!-- *** add the insect bug to wasteland animals -->
+	<set xpath="/entitygroups/entitygroup[starts-with (@name,'EnemyAnimalsWasteland')]/e[@n='none']/@p">40</set>
+	<prepend xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
+		<e n="animalMutantBug" p="10" />
+	</prepend>
+	
+	<prepend xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']">
+		<e n="animalMutantBug" p="20" />
+	</prepend>
+	
 	<!-- *** lumberjacks GS1 *** -->
 	<remove xpath="/entitygroups/entitygroup[@name='zombieLumberjackGroupGS1']/e[contains(@n,'Lumberjack')]"/>
 	

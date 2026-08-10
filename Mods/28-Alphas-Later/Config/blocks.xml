@@ -278,20 +278,20 @@
 			<property name="SortOrder1" value="0000"/>
 			<property name="SortOrder2" value="0950"/>
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-			<!-- color that will be on the map if top block on terrain -->
-			<!-- this makes up the little indicator for ores on the map -->
-			<property name="MapColor" value="0,0,255"/><!-- blue -->
+
+			<!-- Blue ore indicator when visible on the map -->
+			<property name="MapColor" value="0,0,255"/>
+
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<!-- reference to the voxel configured in `worldglobal.xml` -->
-			<property name="MicroSplatVoxel" value="oreChromiumVoxel"/>
-			<!-- reference to the texture configured in `worldglobal.xml` -->
-			<!-- this is used for the preview block when placing it -->
-			<property name="TerrainIndex" value="ChromiumVoxel"/>
-			<property name="Texture" value="316"/>
+
+			<!-- SS Terrain texture configuration -->
+			<property name="TerrainIndex" value="2"/>
+			<property name="Texture" value="746"/>
+
 			<property name="MaxDamage" value="1000"/>
-			<!-- get some resources from it (much overpowered for the abundance)-->
+
 			<drop event="Harvest" name="resourceChromium" count="105" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceScrapBrass" prob=".05" count="200,400" tag="perkStrengthMasteryBrassHarvest"/>
@@ -301,33 +301,33 @@
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="resourceChromium" count="150" prob="0.4" stick_chance="0"/>
 		</block>
-
+		
 		<block name="terrOreCopper" map-only="*">
 			<property name="CanMobsSpawnOn" value="true"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Material" value="MoreMetal"/>
 			<property name="NoScrapping" value="true"/>
+
 			<property name="Shape" value="Terrain"/>
 			<property name="Mesh" value="terrain"/>
+
 			<property name="LPHardnessScale" value="2"/>
 			<property name="Tags" value="ore,deepOre"/>
 			<property name="SortOrder1" value="0000"/>
 			<property name="SortOrder2" value="0950"/>
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-			<!-- color that will be on the map if top block on terrain -->
-			<!-- this makes up the little indicator for ores on the map -->
-			<property name="MapColor" value="255,0,0"/><!-- red -->
+
+			<property name="MapColor" value="255,0,0"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<!-- reference to the voxel configured in `worldglobal.xml` -->
-			<property name="MicroSplatVoxel" value="oreCopperVoxel"/>
-			<!-- reference to the texture configured in `worldglobal.xml` -->
-			<!-- this is used for the preview block when placing it -->
-			<property name="TerrainIndex" value="CopperVoxel"/>
-			<property name="Texture" value="33"/>
+
+			<!-- SS Terrain texture -->
+			<property name="TerrainIndex" value="2"/>
+			<property name="Texture" value="724"/>
+
 			<property name="MaxDamage" value="750"/>
-			<!-- get some resources from it (much overpowered for the abundance)-->
+
 			<drop event="Harvest" name="resourceCopper" count="105" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceScrapBrass" prob=".05" count="200,400" tag="perkStrengthMasteryBrassHarvest"/>
@@ -337,7 +337,7 @@
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="resourceCopper" count="150" prob="0.4" stick_chance="0"/>
 		</block>
-		
+
 		<block name="terrOreLimestone" map-only="*">
 			<property name="CanMobsSpawnOn" value="true"/>
 			<property name="CreativeMode" value="Player"/>
@@ -350,20 +350,20 @@
 			<property name="SortOrder1" value="0000"/>
 			<property name="SortOrder2" value="0950"/>
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-			<!-- color that will be on the map if top block on terrain -->
-			<!-- this makes up the little indicator for ores on the map -->
-			<property name="MapColor" value="255,255,0"/><!-- yellow -->
+
+			<!-- Yellow ore indicator when visible on the map -->
+			<property name="MapColor" value="255,255,0"/>
+
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<!-- reference to the voxel configured in `worldglobal.xml` -->
-			<property name="MicroSplatVoxel" value="oreLimestoneVoxel"/>
-			<!-- reference to the texture configured in `worldglobal.xml` -->
-			<!-- this is used for the preview block when placing it -->
-			<property name="TerrainIndex" value="LimestoneVoxel"/>
-			<property name="Texture" value="300"/>
+
+			<!-- SS Terrain texture configuration -->
+			<property name="TerrainIndex" value="2"/>
+			<property name="Texture" value="751"/>
+
 			<property name="MaxDamage" value="600"/>
-			<!-- get some resources from it (much overpowered for the abundance)-->
+
 			<drop event="Harvest" name="resourceLimestone" count="105" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceScrapBrass" prob=".05" count="200,400" tag="perkStrengthMasteryBrassHarvest"/>
@@ -386,20 +386,20 @@
 			<property name="SortOrder1" value="0000"/>
 			<property name="SortOrder2" value="0950"/>
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-			<!-- color that will be on the map if top block on terrain -->
-			<!-- this makes up the little indicator for ores on the map -->
-			<property name="MapColor" value="128,0,128"/><!-- purple -->
+
+			<!-- Purple ore indicator when visible on the map -->
+			<property name="MapColor" value="128,0,128"/>
+
 			<property name="ImposterExclude" value="true"/>
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<!-- reference to the voxel configured in `worldglobal.xml` -->
-			<property name="MicroSplatVoxel" value="oreZincVoxel"/>
-			<!-- reference to the texture configured in `worldglobal.xml` -->
-			<!-- this is used for the preview block when placing it -->
-			<property name="TerrainIndex" value="ZincVoxel"/>
-			<property name="Texture" value="300"/>
+
+			<!-- SS Terrain texture configuration -->
+			<property name="TerrainIndex" value="2"/>
+			<property name="Texture" value="760"/>
+
 			<property name="MaxDamage" value="950"/>
-			<!-- get some resources from it (much overpowered for the abundance)-->
+
 			<drop event="Harvest" name="resourceZinc" count="105" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
 			<drop event="Harvest" name="resourceScrapBrass" prob=".05" count="200,400" tag="perkStrengthMasteryBrassHarvest"/>
@@ -429,10 +429,10 @@
 			<property name="DisplayType" value="blockTerrain"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
 			<!-- reference to the voxel configured in `worldglobal.xml` -->
-			<property name="MicroSplatVoxel" value="oreFertilizedTerrainVoxel"/>
+			<!-- <property name="MicroSplatVoxel" value="oreFertilizedTerrainVoxel"/> -->
 			<!-- reference to the texture configured in `worldglobal.xml` -->
 			<!-- this is used for the preview block when placing it -->
-			<property name="TerrainIndex" value="FertilizedTerrainVoxel"/>
+			<!-- <property name="TerrainIndex" value="FertilizedTerrainVoxel"/> -->
 			<property name="Texture" value="2"/>
 			<property name="MaxDamage" value="250"/>
 			<!-- get some resources from it (much overpowered for the abundance)-->
@@ -444,6 +444,7 @@
 			<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
 			<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
 		</block>
+	
 	</insertafter>
 	
 	<append xpath="/blocks">
@@ -451,28 +452,24 @@
 		<block name="terrOreStoneChromiumRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			
 			<property name="SortOrder2" value="1450"/>
 		</block>
 		
 		<block name="terrOreStoneCopperRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			
 			<property name="SortOrder2" value="1500"/>
 		</block>
 		
 		<block name="terrOreStoneLimestoneRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			
 			<property name="SortOrder2" value="1550"/>
 		</block>
 		
 		<block name="terrOreStoneZincRandom">
 			<property name="Extends" value="terrOreStoneIronRandom"/>
 			<property name="CreativeMode" value="Player"/>
-			
 			<property name="SortOrder2" value="1600"/>
 		</block>
 		
@@ -3159,7 +3156,7 @@
 			<property name="Model" value="@:Entities/Commercial/sinkCounterMountedPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0.5,-1"/>
 			<property name="SortOrder2" value="0006"/>
-		</block>		
+		</block>
 
 		<block name="cntToilet01Player">
 			<property name="CustomIcon" value="cntToilet01"/>

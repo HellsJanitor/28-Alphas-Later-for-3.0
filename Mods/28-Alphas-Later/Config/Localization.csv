@@ -720,13 +720,13 @@ terrOreChromium,Chromium Ore
 terrOreCopper,Copper Ore
 terrOreLimestone,Limestone Ore
 terrOreStoneChromiumRandom,= Chromium Vein = Helper
-terrOreStoneChromiumRandomDesc,Chromium / Stone / Sandstone
+terrOreStoneChromiumRandomDesc," "
 terrOreStoneCopperRandom,= Copper Vein = Helper
-terrOreStoneCopperRandomDesc,Copper / Stone / Sandstone
+terrOreStoneCopperRandomDesc," "
 terrOreStoneLimestoneRandom,= Limestone Vein = Helper
-terrOreStoneLimestoneRandomDesc,Limestone / Stone / Sandstone
+terrOreStoneLimestoneRandomDesc," "
 terrOreStoneZincRandom,= Zinc Vein = Helper
-terrOreStoneZincRandomDesc,Zinc / Stone / Sandstone
+terrOreStoneZincRandomDesc," "
 terrOreZinc,Zinc Ore
 toolAmmoPress,Ammunition Press
 toolAmmoPressDesc,This tool is required to assemble and dismantle firearm rounds at a workbench.

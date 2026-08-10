@@ -1,95 +1,99 @@
 <HellsJanitor>
-    <set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .10</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.3, .025</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .045</set>
+	<set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .10</set>
+	<set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.3, .025</set>
+	<set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .045</set>
 	<!-- Do not set night desaturation to exactly 0.
      Zero causes some lit smoke/gas particles to render black. -->
-    <set xpath="/worldglobal/environment/property[@name='ambientSkyDesat']/@value">.95, .05</set>
+	<set xpath="/worldglobal/environment/property[@name='ambientSkyDesat']/@value">.95, .05</set>
 
-    <!-- Do not fully kill moon ambient; smoke and lit particles need a little fill -->
-    <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .04</set>
+	<!-- Do not fully kill moon ambient; smoke and lit particles need a little fill -->
+	<set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .04</set>
 
-    <!-- Interiors can still be dark, but not absolute-zero -->
-    <set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">.5, .08</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">.4, .02</set>
-    <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.7, .035</set>
+	<!-- Interiors can still be dark, but not absolute-zero -->
+	<set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">.5, .08</set>
+	<set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">.4, .02</set>
+	<set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.7, .035</set>
 
-    <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">1.4, 1.6</set>
+	<set xpath="/worldglobal/environment/property[@name='fogPower']/@value">1.4, 1.6</set>
 	
-	<append xpath="/worldglobal">
-		<microsplat-voxel name="oreChromiumVoxel">
-			<texture name="ChromiumVoxel" weight="1"/>
-		</microsplat-voxel>
-		<microsplat-voxel name="oreCopperVoxel">
-			<texture name="CopperVoxel" weight="1"/>
-		</microsplat-voxel>
-		<microsplat-voxel name="oreLimestoneVoxel">
-			<texture name="LimestoneVoxel" weight="1"/>
-		</microsplat-voxel>
-		<microsplat-voxel name="oreZincVoxel">
-			<texture name="ZincVoxel" weight="1"/>
-		</microsplat-voxel>
-		<microsplat-voxel name="oreFertilizedTerrainVoxel">
-			<texture name="FertilizedTerrainVoxel" weight="1"/>
-		</microsplat-voxel>
+	<conditional>
+		<if cond="mod_loaded('OcbMicroSplat')">
+			<append xpath="/worldglobal">
+				<microsplat-voxel name="oreChromiumVoxel">
+					<texture name="ChromiumVoxel" weight="1"/>
+				</microsplat-voxel>
+				<microsplat-voxel name="oreCopperVoxel">
+					<texture name="CopperVoxel" weight="1"/>
+				</microsplat-voxel>
+				<microsplat-voxel name="oreLimestoneVoxel">
+					<texture name="LimestoneVoxel" weight="1"/>
+				</microsplat-voxel>
+				<microsplat-voxel name="oreZincVoxel">
+					<texture name="ZincVoxel" weight="1"/>
+				</microsplat-voxel>
+				<microsplat-voxel name="oreFertilizedTerrainVoxel">
+					<texture name="FertilizedTerrainVoxel" weight="1"/>
+				</microsplat-voxel>
 
-		<microsplat-texture name="ChromiumVoxel">
-			<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[0]"/>
-			<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[0]"/>
-			<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[0]"/>
-			<property name="SwitchNormal" value="false"/>
-			<property name="SplatUVScale" value="4,4"/>
-			<!-- Metallic is now its own 5bit texture -->
-			<!-- <property name="Metallic" value="0.7"/> -->
-		</microsplat-texture>
+				<microsplat-texture name="ChromiumVoxel">
+					<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[0]"/>
+					<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[0]"/>
+					<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[0]"/>
+					<property name="SwitchNormal" value="false"/>
+					<property name="SplatUVScale" value="4,4"/>
+					<!-- Metallic is now its own 5bit texture -->
+					<property name="Metallic" value="0.7"/>
+				</microsplat-texture>
 
-		<microsplat-texture name="CopperVoxel">
-			<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[1]"/>
-			<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[1]"/>
-			<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[1]"/>
-			<property name="SwitchNormal" value="false"/>
-			<property name="SplatUVScale" value="4,4"/>
-			<!-- Metallic is now its own 5bit texture -->
-			<!-- <property name="Metallic" value="0.7"/> -->
-		</microsplat-texture>
+				<microsplat-texture name="CopperVoxel">
+					<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[1]"/>
+					<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[1]"/>
+					<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[1]"/>
+					<property name="SwitchNormal" value="false"/>
+					<property name="SplatUVScale" value="4,4"/>
+					<!-- Metallic is now its own 5bit texture -->
+					<property name="Metallic" value="0.7"/>
+				</microsplat-texture>
 		
-		<microsplat-texture name="LimestoneVoxel">
-			<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[2]"/>
-			<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[2]"/>
-			<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[2]"/>
-			<property name="SwitchNormal" value="false"/>
-			<property name="SplatUVScale" value="4,4"/>
-			<!-- Metallic is now its own 5bit texture -->
-			<!-- <property name="Metallic" value="0.7"/> -->
-		</microsplat-texture>
+				<microsplat-texture name="LimestoneVoxel">
+					<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[2]"/>
+					<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[2]"/>
+					<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[2]"/>
+					<property name="SwitchNormal" value="false"/>
+					<property name="SplatUVScale" value="4,4"/>
+					<!-- Metallic is now its own 5bit texture -->
+					<property name="Metallic" value="0.7"/>
+				</microsplat-texture>
 
-		<microsplat-texture name="ZincVoxel">
-			<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[3]"/>
-			<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[3]"/>
-			<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[3]"/>
-			<property name="SwitchNormal" value="false"/>
-			<property name="SplatUVScale" value="4,4"/>
-			<!-- Metallic is now its own 5bit texture -->
-			<!-- <property name="Metallic" value="0.7"/> -->
-		</microsplat-texture>
+				<microsplat-texture name="ZincVoxel">
+					<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[3]"/>
+					<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[3]"/>
+					<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[3]"/>
+					<property name="SwitchNormal" value="false"/>
+					<property name="SplatUVScale" value="4,4"/>
+					<!-- Metallic is now its own 5bit texture -->
+					<property name="Metallic" value="0.7"/>
+				</microsplat-texture>
 		
-		<microsplat-texture name="FertilizedTerrainVoxel">
-			<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[4]"/>
-			<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[4]"/>
-			<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[4]"/>
-			<property name="SwitchNormal" value="false"/>
-			<property name="SplatUVScale" value="4,4"/>
-			<!-- Metallic is now its own 5bit texture -->
-			<!-- <property name="Metallic" value="0.7"/> -->
-		</microsplat-texture>
+				<microsplat-texture name="FertilizedTerrainVoxel">
+					<property name="Diffuse" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_diff_tarray[4]"/>
+					<property name="Normal" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_norm_tarray[4]"/>
+					<property name="Specular" value="#@modfolder:Resources/OreVoxels28AL.unity3d?MicroSplatOreVoxels_28AL_shao_tarray[4]"/>
+					<property name="SwitchNormal" value="false"/>
+					<property name="SplatUVScale" value="4,4"/>
+					<!-- Metallic is now its own 5bit texture -->
+					<property name="Metallic" value="0.7"/>
+				</microsplat-texture>
 
-		<!-- overwrite existing iron ore texture -->
-		<!-- <microsplat-texture name="microsplat17"> -->
-			<!-- <property name="Diffuse" value="#@modfolder:Resources/OreVoxels.unity3d?MicroSplatOreVoxels_diff_tarray[2]"/> -->
-			<!-- <property name="Normal" value="#@modfolder:Resources/OreVoxels.unity3d?MicroSplatOreVoxels_norm_tarray[2]"/> -->
-			<!-- <property name="Specular" value="#@modfolder:Resources/OreVoxels.unity3d?MicroSplatOreVoxels_shao_tarray[2]"/> -->
-			<!-- <property name="SwitchNormal" value="false"/> -->
-			<!-- <property name="SplatUVScale" value="4,4"/> -->
-		<!-- </microsplat-texture> -->
-	</append>
+				<!-- overwrite existing iron ore texture -->
+				<microsplat-texture name="microsplat17">
+					<property name="Diffuse" value="#@modfolder:Resources/OreVoxels.unity3d?MicroSplatOreVoxels_diff_tarray[2]"/>
+					<property name="Normal" value="#@modfolder:Resources/OreVoxels.unity3d?MicroSplatOreVoxels_norm_tarray[2]"/>
+					<property name="Specular" value="#@modfolder:Resources/OreVoxels.unity3d?MicroSplatOreVoxels_shao_tarray[2]"/>
+					<property name="SwitchNormal" value="false"/>
+					<property name="SplatUVScale" value="4,4"/>
+				</microsplat-texture>
+			</append>
+		</if>
+	</conditional>
 </HellsJanitor>

@@ -8,7 +8,7 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffAddHeatTrigger"/>
 		</effect_group>
-	</append>
+	</append>	
 	
 	<!-- *** test loot bag -->
 	<!-- <set xpath="/entity_classes/entity_class[starts-with(@name,'EntityLootContainer')]/property[@name='Mesh']/@value">#@modfolder:Resources/humanGoreLoot.unity3d?humanSkeletonGorePrefab</set> -->
@@ -299,14 +299,14 @@
 	</insertafter>
 	
 	<!-- *** 'Fat' zombies explode ... -->
-	<insertafter xpath="//entity_class[@name='zombieFemaleFat']//property[@name='Tags']">
+	<insertafter xpath="//entity_class[starts-with (@name,'zombieFemaleFat')]//property[@name='Tags']">
 		<property name="Class" value="EntityZombieCop"/>
 	</insertafter>
-	<insertafter xpath="//entity_class[@name='zombieFemaleFat']//property[@name='HasDeathAnim']">
+	<insertafter xpath="//entity_class[starts-with (@name,'zombieFemaleFat')]//property[@name='HasDeathAnim']">
 		
 		<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="100"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -317,14 +317,14 @@
 		</property>
 	</insertafter>
 	
-	<insertafter xpath="//entity_class[@name='zombieFatHawaiian']//property[@name='Tags']">
+	<insertafter xpath="//entity_class[starts-with (@name,'zombieFatHawaiian')]//property[@name='Tags']">
 		<property name="Class" value="EntityZombieCop"/>
 	</insertafter>
-	<insertafter xpath="//entity_class[@name='zombieFatHawaiian']//property[@name='HasDeathAnim']">
+	<insertafter xpath="//entity_class[starts-with (@name,'zombieFatHawaiian')]//property[@name='HasDeathAnim']">
 		
 		<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -335,14 +335,14 @@
 		</property>
 	</insertafter>
 	
-	<insertafter xpath="//entity_class[@name='zombieBowler']//property[@name='Tags']">
+	<insertafter xpath="//entity_class[starts-with (@name,'zombieBowler')]//property[@name='Tags']">
 		<property name="Class" value="EntityZombieCop"/>
 	</insertafter>
-	<insertafter xpath="//entity_class[@name='zombieBowler']//property[@name='HasDeathAnim']">
+	<insertafter xpath="//entity_class[starts-with (@name,'zombieBowler')]//property[@name='HasDeathAnim']">
 		
 		<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -832,7 +832,7 @@
 			<!-- <property name="MatColor" value="rotten"/> -->
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="100"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -873,7 +873,7 @@
 			<!-- <property name="MatColor" value="rotten"/> -->
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -914,7 +914,7 @@
 			<!-- <property name="MatColor" value="rotten"/> -->
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -1263,7 +1263,7 @@
 			
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="100"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -1290,7 +1290,7 @@
 			
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -1317,7 +1317,7 @@
 			
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -1712,7 +1712,7 @@
 			<property name="MatColor" value="frozen"/>
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="100"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -1743,7 +1743,7 @@
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -2217,8 +2217,8 @@
 			<property name="Mesh" value="#@modfolder:Resources/mutants.unity3d?ZombieParasitev2"/>
 			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
 			<property name="LookAtAngle" value="0"/>
-			<!-- <property name="Mass" value="150"/> -->
-			<!-- <property name="WalkType" value="22"/> -->
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="22"/>
 			<property name="PainResistPerHit" value=".75"/>
 
 			<!-- Gameplay zombieHellsParasite -->
@@ -2231,6 +2231,18 @@
 			<property name="HJCorpseLootDropProb" value="1"/>
 			<property name="HJCorpseLootDropScale" value="1.0"/>
 			<property name="HJCorpseLootDropSound" value="zpack_spawn"/>
+			
+			<property name="AITask" value="
+			Leap|
+			BreakBlock|
+			DestroyArea|
+			Territorial|
+			ApproachDistraction|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal,0,EntityAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
 			
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongRadiated"/>
@@ -2442,7 +2454,7 @@
 
 			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
 			<property class="Explosion">
-			<property name="ParticleIndex" value="8"/>
+			<property name="ParticleIndex" value="101"/>
 			<property name="RadiusBlocks" value="5"/>
 			<property name="RadiusEntities" value="6"/>
 			<property name="BlockDamage" value="500"/>
@@ -2544,7 +2556,7 @@
 			
 		<entity_class name="animalMutantBug" extends="animalTemplateHostile">
 			<property name="SizeScale" value=".8"/>
-			<property name="Mesh" value="#@modfolder:Resources/mutantbug.unity3d?InsectMonsterSM"/>
+			<property name="Mesh" value="#@modfolder:Resources/mutantbug.unity3d?InsectMonster.prefab"/>
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,animal,hostile,mutant"/>
 			<property name="AvatarController" value="AvatarAnimalController"/>
@@ -2560,6 +2572,7 @@
 			<property name="HasDeathAnim" value="true"/>
 			<property name="RootMotion" value="false"/>
 			<property name="RagdollOnDeathChance" value=".5"/>
+			<property name="PhysicsBody" value="InsectMonsterGreen"/>
 
 			<property name="SoundRandomTime" value="20"/>
 			<property name="SoundAlertTime" value="10"/>
@@ -2571,18 +2584,21 @@
 			<property name="SoundAttack" value="Animals/Snake/snakeattack"/>
 
 			<property name="AIFeralSense" value="1.6"/>
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityBandit,20"/>
-			<property name="AITask-4" value="ApproachSpot"/>
-			<property name="AITask-5" value="Look"/>
-			<property name="AITask-6" value="Wander"/>
-			<property name="AITask-7" value=""/>
-			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer,EntityBandit"/>
-			<property name="AITarget-2" value="BlockingTargetTask"/>
-			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="flags=edible"/>
-			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityBandit,0,-8"/>
-			<property name="AITarget-5" value=""/>
+			<property name="AITask" value="
+			BreakBlock|
+			ApproachDistraction|
+			RangedAttackTarget itemType=1;cooldown=4;duration=5|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal,0,EntityAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+			<property name="AITarget" value="
+			SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+			BlockingTargetTask|
+			SetNearestCorpseAsTarget flags=edible|
+			SetNearestEntityAsTarget class=EntityPlayer,28,20,EntityBandit,0,-8,EntityAnimalStag,0,0|
+			"/>
 
 			<!-- Gameplay  -->
 			<property name="MoveSpeed" value=".2"/>
