@@ -1,6 +1,6 @@
 <HellsJanitor>
 	<conditional>
-		<if cond="game_version() &lt; version(1,2,6)">
+		<if cond="game_version() &lt; version(1,3,1)">
 			<setattribute xpath="//window[@name='mainMenu']//mainmenubutton[not(contains(@name, 'btnQuit'))]" name="force_hide">true</setattribute>
 			<append xpath="//window[@name='menuBackground']">
 				<texture depth="180" color="[white]" texture="@modfolder:UIAtlases/ItemIconAtlas/warning.png" name="failure" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5"/>
