@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>as I can't host this mod in this repo (it's too big), you are encouraged to download it from this link:
+>https://7daystodiemods.com/mods/ss-terrain
+
 # 28-Alphas-Later-for-3.0
 
 **Will you survive?**
